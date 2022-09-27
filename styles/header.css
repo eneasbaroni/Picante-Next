@@ -24,3 +24,11 @@ header button {
   background-color: transparent;
   cursor: pointer;
 }
+
+/* Media Querys */
+@media screen and (max-width: 768px) {
+  header {    
+    padding: 0 0.5rem;
+  }
+ 
+}

@@ -9,6 +9,9 @@
   position: relative;
   grid-column: 1 / span 12;
   height: 10rem;
+  width: 80vw !important; 
+  margin-left: auto;   
+  margin-right: auto;
 }
 
 .homeImgA {
@@ -25,7 +28,9 @@
   position: relative;
   grid-column: 1 / span 12;
   height: 20rem;
-
+  width: 80vw !important; 
+  margin-left: auto;   
+  margin-right: auto;
   animation-name: efecto_logo;  
   animation-iteration-count: infinite;
   animation-duration: 3s;
@@ -158,6 +163,72 @@
   font-family: 'Anton', sans-serif; 
   font-size: calc(2rem + 1vw); 
 }
+
+/* Media Querys */
+@media screen and (max-width: 992px) {
+  .inicioContainer {
+    padding: 0;    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .homeImgA, .homeImgB {
+    position: relative;
+    grid-column: 1 / span 12;
+    height: 20vw;      
+  }
+
+  .homeImgC {
+    position: relative;
+    grid-column: 1 / span 12;
+    height: 40vw;     
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .inicioContainer {
+    padding: 0;    
+  }
+
+  .homeImgA, .homeImgB {
+    position: relative;
+    grid-column: 1 / span 12;
+    height: 20vw; 
+  }
+
+  .homeImgC {
+    position: relative;
+    grid-column: 1 / span 12;
+    height: 40vw;  
+  }
+
+  /* .imagesContainer {  
+    display: none;
+  } */
+
+  .toFormularioBtn {
+    padding-left: 1rem;    
+    width: 15rem;   
+  }
+
+  .toFormularioBtn img{
+    transform: translate(4rem, 0) rotate(-90deg); 
+    padding: 0.5rem !important;
+    filter: invert(10%) sepia(49%) saturate(5444%) hue-rotate(230deg) brightness(96%) contrast(96%)
+   }
+   
+   .toFormularioBtn .arrow2{
+    transform: translate(5rem, 0) rotate(-90deg);  
+   }
+   
+   .toFormularioBtn .arrow3{
+    transform: translate(6rem, 0) rotate(-90deg);  
+   }
+}
+
+
+
 
 
 

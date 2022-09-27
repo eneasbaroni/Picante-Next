@@ -25,11 +25,12 @@
   box-shadow: 7px 7px 0 0 var(--main-color) ;
   background-color: var(--main-bg);
   cursor: pointer;
+  font-size: calc(0.8rem + 1vw);
 }
 
 .galeriasContainer button a {  
   font-family: 'Anton', sans-serif; 
-  font-size: calc(0.8rem + 1vw);
+  
 }
 
 .galBtnA { 
@@ -61,3 +62,41 @@
   transform: rotate(-2deg) translate(7px, 7px);
   box-shadow: none;
 }
+
+/* Media Querys */
+
+@media screen and (max-width: 992px) { 
+
+  .galeriasContainer button  {
+    /* grid-column: auto / span 7; */  
+    margin: -1rem auto 0; 
+    width: 20rem;
+    height: 10rem;
+    background-color: transparent;
+    border: var(--main-border);
+    box-shadow: 7px 7px 0 0 var(--main-color) ;
+    background-color: var(--main-bg);
+    cursor: pointer;
+    font-size: calc(0.8rem + 1vw);
+  }
+  
+  .galBtnA {
+    grid-column: 1 / span 12;
+  }
+  .galBtnB {
+    grid-column: 1 / span 12;
+  }
+  .galBtnC {
+    grid-column: 1 / span 12;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .galeriasContainer button  {    
+    width: 80vw;
+    height: 30vw; 
+  }   
+}
+
+
+
