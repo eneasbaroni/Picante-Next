@@ -1,0 +1,26 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-bottom: var(--main-border); 
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 5rem; 
+  z-index: 99; 
+  background-color: var(--main-bg);
+}
+
+header h1 {
+  grid-column: 2 / span 10;
+  text-align: center;
+  font-size: calc(1rem + 2vw);
+}
+
+header button {
+  grid-column: 12 / span 1;
+  text-align: center;
+  font-size: calc(1rem + 1vw);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

@@ -1,6 +1,13 @@
+import Layout from "../components/Layout/Layout";
+import Inicio from "../components/Inicio/Inicio";
+
  
 export default function Home() {
   return (
-    <h1>PICANTE</h1>
+    <Layout>
+      <main>
+        <Inicio/>
+      </main>
+    </Layout>
   )
 } 

@@ -1,0 +1,163 @@
+.inicioContainer {
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);  
+  z-index: 10 !important;
+}
+
+.homeImgA, .homeImgB {
+  position: relative;
+  grid-column: 1 / span 12;
+  height: 10rem;
+}
+
+.homeImgA {
+  margin-top: 5rem;
+  transform: rotate( -5deg );  
+}
+
+.homeImgB {
+  transform: rotate( 5deg );  
+}
+
+
+.homeImgC {
+  position: relative;
+  grid-column: 1 / span 12;
+  height: 20rem;
+
+  animation-name: efecto_logo;  
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 1s
+}
+
+@keyframes efecto_logo {
+  0%{transform: scale(1);}
+  20%{transform: rotate(5deg);}
+  40%{transform: rotate(-5deg);}
+  60%{ transform: scale(1);}
+  80%{transform: scale(1.05);}  
+  100%{transform: scale(1);}  
+}
+
+.homeInfo {
+  grid-column: 1 / span 12;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.imagesContainer {  
+  margin-top: 2rem;
+  grid-column: 1 / span 12;  
+  background-image: url('/images/dots-01.svg'); 
+  background-repeat: repeat-y;
+  background-position: 50% 50%;
+  background-size: 70%;
+  display: grid; 
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.imgA, .imgB {
+  grid-column: auto / span 4;
+  position: relative;  
+  height: 25rem;
+  height: 21vw;
+  display:flex; 
+  border: solid 3px #885d75;
+  margin: 5rem 2rem;
+  background: #885d75 ; 
+  transition: all .5s ease-in-out;
+  box-shadow: 7px 7px 0 0 #885d75 ; 
+}
+
+.imgA {
+  transform: rotate( -5deg );
+}
+
+.imgB {
+  transform: rotate( 5deg );
+}
+
+.imgMiddleA {
+  grid-column: 3 / span 4; 
+  transform: rotate( 1deg ) !important;
+  margin-top: -7rem  
+}
+
+.imgMiddleB {
+  grid-column: 8 / span 4;
+  transform: rotate( -5deg ) !important;
+  margin-top: -8rem    
+}
+
+.imgA img, .imgB img {
+  height: auto;
+  mix-blend-mode: soft-light;  
+  -webkit-filter: grayscale(100%) contrast(200%);
+  filter: grayscale(100%) contrast(200%);
+  opacity: 1;
+  transition: all .5s ease-in-out;;    
+}
+
+.imgA img:hover, .imgB img:hover {    
+  -webkit-filter:none;
+  filter: none;
+  opacity: 1;    
+} 
+
+.imgA:hover, .imgB:hover {  
+  background:none;    
+}
+
+.inicioPresupuesto {
+  grid-column: 1 / span 12;
+  text-align: center;
+  margin-top: 5rem;
+  font-family: 'Anton', sans-serif;
+  font-size: calc(3rem + 1vw);
+}
+
+.inicioPresupuesto span {
+  -webkit-text-stroke: 2px var(--main-color);
+  -webkit-text-fill-color: var(--main-bg);
+  font-family: 'Anton', sans-serif;
+  font-size: calc(3rem + 1vw);
+}
+
+.toFormularioBtn {
+  grid-column: 1 / span 12;
+  font-size: calc(1rem + 1vw);
+  text-align: left;
+  padding-left: 4rem;
+  margin-top: 5rem;
+  width: 30rem;
+  margin: auto;
+  background-color: var(--main-bg);
+  border: var(--main-border);
+  box-shadow: 7px 7px 0 0 var(--main-color);
+  cursor: pointer;
+  position: relative;
+}
+
+.toFormularioBtn img{
+ transform: translate(9rem, 0) rotate(-90deg); 
+ padding: 0.5rem !important;
+ filter: invert(10%) sepia(49%) saturate(5444%) hue-rotate(230deg) brightness(96%) contrast(96%)
+}
+
+.toFormularioBtn .arrow2{
+ transform: translate(11rem, 0) rotate(-90deg);  
+}
+
+.toFormularioBtn .arrow3{
+ transform: translate(13rem, 0) rotate(-90deg);  
+}
+
+.toFormularioBtn span { 
+  font-family: 'Anton', sans-serif; 
+  font-size: calc(2rem + 1vw); 
+}
+
+
+

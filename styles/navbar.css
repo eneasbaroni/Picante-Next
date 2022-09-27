@@ -1,0 +1,61 @@
+.navContainer {
+  position: fixed;  
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;  
+  background-color: rgba(0, 0, 0, 0.658);
+  z-index: 99;
+}
+
+nav {  
+  width: 50rem;  
+  /* display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second-bg);
+  color: var(--second-color);
+  padding: 1rem;
+  border-right: var(--second-border);
+  border-bottom: var(--second-border);
+}
+
+nav button {
+  /* grid-column: auto / span 10; */
+  margin: 1rem;
+  text-align: center;  
+  border: var(--second-border);
+  box-shadow: 7px 7px 0 0 var(--second-color); 
+  color: var(--second-color); 
+}
+
+nav button a {
+  font-size: calc(1rem + 1vw);  
+  color: var(--second-color); 
+}
+
+nav button a:hover {  
+  color: var(--second-color); 
+}
+
+.closeBtn {
+  position: fixed;
+  color: var(--second-color);
+  /* grid-column: 11 / span 2; */
+  /* margin: 1rem; */
+  cursor: pointer;
+  padding: 0 1rem;
+  top: 0rem;
+  left: calc(50rem - 3px);
+  text-align: center;  
+  border-top:none; 
+  border-left:none; 
+  border-right: var(--second-border);   
+  border-bottom: var(--second-border); 
+  box-shadow: none;  
+  background-color: var(--second-bg);
+  z-index: 99;
+}

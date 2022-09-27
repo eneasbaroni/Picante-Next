@@ -12,8 +12,8 @@ const Layout = ({children}) => {
       </Head>
       <>
         <Header/>        
-        {children}
-        {/* <Socials/> */}
+          {children}
+          {/* <Socials/> */}
         <Footer/>
       </>
     </>
