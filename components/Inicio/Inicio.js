@@ -26,7 +26,7 @@ const Inicio = () => {
         <div className="imgB imgMiddleB"><Image src='/images/home/home04.jpg' objectFit="cover" layout="fill" alt="Home Banner"></Image></div>
       </div>
       
-      <Galerias/>
+      <Galerias/> 
 
       <p className="inicioPresupuesto">
         <span>TENES ALGUN TRABAJO EN MENTE?</span><br/>
