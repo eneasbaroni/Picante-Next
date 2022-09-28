@@ -24,8 +24,9 @@
   border: var(--main-border);
   box-shadow: 7px 7px 0 0 var(--main-color) ;
   background-color: var(--main-bg);
+  background-color: var(--second-bg);
   cursor: pointer;
-  font-size: calc(0.8rem + 1vw);
+  font-size: calc(1rem + 1.5vw);
 }
 
 .galeriasContainer button a {  
@@ -74,7 +75,7 @@
     box-shadow: 7px 7px 0 0 var(--main-color) ;
     background-color: var(--main-bg);
     cursor: pointer;
-    font-size: calc(0.8rem + 1vw);
+    font-size: calc(1rem + 1.5vw);
   }
 
   .galeriasContainer h2 {

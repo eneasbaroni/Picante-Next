@@ -10,7 +10,7 @@ const NavBar = ({opacity, foo}) => {
         <Link href="/#galerias"><button onClick={foo}>GALERIAS</button></Link>
         <Link href="/presupuesto"><button onClick={foo}>PRESUPUESTO</button></Link>
         <Link href="/nosotros"><button  onClick={foo}>NOSOTROS</button></Link>
-        <Link href="/contacto"><button  onClick={foo}>CONTACTO</button></Link>
+        <Link href="/#contacto"><button  onClick={foo}>CONTACTO</button></Link>
       </nav>
     </div>    
    

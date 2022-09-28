@@ -46,7 +46,7 @@ const Inicio = () => {
 
 
 
-      <Contacto/>
+      {/* <Contacto/> */}
       
 
 
