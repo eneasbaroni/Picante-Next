@@ -11,7 +11,7 @@ const Input = ({placeholder, name, label, foo}) => {
 }
 
 
-const presupuesto = () => {
+const Presupuesto = () => {
 
   const [user, setUser] = useState({
     nombre:"",
@@ -81,4 +81,4 @@ const presupuesto = () => {
   )
 }
 
-export default presupuesto
+export default Presupuesto

@@ -11,7 +11,7 @@ const Input = ({placeholder, name, label, foo}) => {
 }
 
 
-const feriaFormulario = () => {
+const FeriaFormulario = () => {
 
   const [user, setUser] = useState({ 
     nombre:"",
@@ -65,4 +65,4 @@ const feriaFormulario = () => {
   )
 }
 
-export default feriaFormulario
+export default FeriaFormulario
