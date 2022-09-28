@@ -1,10 +1,11 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from 'next/image'
+import Link from 'next/link'
+import Layout from '../components/Layout/Layout'
 
-
-const Contacto = () => {
+const contacto = () => {
   return (
-    <div className='contactoContainer'>
+    <Layout>
+      <main className='contactoContainer'>
         <h1> SIGAMOS EN</h1>
         <h2> CONTACTO</h2>
 
@@ -18,13 +19,14 @@ const Contacto = () => {
         </div>
 
         <div className='mapContainer'>
-          <Image src='/images/contact/mapa.png' width={600} height={400} layout='fill' objectFit='cover' alt='mapa' />
+          <Image src='/images/contact/mapa.png' width={600} height={400} layout='fill' objectFit='contain' alt='mapa' />
         </div>  
 
 
 
-      </div>
+      </main>
+    </Layout>
   )
 }
 
-export default Contacto
+export default contacto

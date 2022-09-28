@@ -7,17 +7,17 @@ import database from '../../db/database'
 export const getStaticProps = async () => { 
 
   const obras = database
-  const obrasPapel = obras.papel
+  const obrasTela = [obras.telaAgua , obras.telaPlastisol]  
 
   return {
     props: {
-      obrasPapel
+      obrasTela
     },
     revalidate: 3600
   } 
 }
 
-const Papel = ({obrasPapel}) => {
+const Tela = ({obrasTela}) => {  
 
   const [imgGrande, setImgGrande] = useState(false)
   const [imgGrandeSrc, setImgGrandeSrc] = useState("")
@@ -46,12 +46,26 @@ const Papel = ({obrasPapel}) => {
   return (
     <Layout> 
       <main className="galeriaContainer">
-        <h1>TRABAJOS EN PAPEL</h1>
+        <h1>TRABAJOS EN TELA</h1>
+
+        <h2>TINTA</h2>
+        <h3>AL AGUA</h3>
 
         <div className="imagesGalleryContainer">
-          {obrasPapel.map((obra, i) => (            
+          {obrasTela[0].map((obra, i) => (            
             <div className="imageContainer" style={{transform: `rotate( ${ getRandom(-5, 10) }deg )`}} key={i} onClick={handleClick}>
-              <Image src={`/images/papel/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600} alt={obra.title} />              
+              <Image src={`/images/tela/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600}  alt={obra.title} />              
+            </div>
+          ))}
+        </div>
+
+        <h2>TINTA</h2>
+        <h3>PLASTISOL</h3>
+
+        <div className="imagesGalleryContainer">
+          {obrasTela[1].map((obra, i) => (            
+            <div className="imageContainer colorB" style={{transform: `rotate( ${ getRandom(-5, 10) }deg )`}} key={i} onClick={handleClick}>
+              <Image src={`/images/tela/${obra.src}`} objectFit='cover' name={obra.src} height={600} width={600}  alt={obra.title} />              
             </div>
           ))}
         </div>
@@ -59,7 +73,7 @@ const Papel = ({obrasPapel}) => {
         {imgGrande &&
           <div className="imgGrandeContainer" style={{opacity: visible}} onClick={offImgGrande}>
             <div className="imgGrande">
-              <Image  layout="fill" objectFit="contain" src={`/images/papel/${imgGrandeSrc}`} alt="imgGrande"/>
+              <Image  layout="fill" objectFit="contain" src={`/images/tela/${imgGrandeSrc}`} alt="imgGrande"/>
             </div>
           </div> 
         }
@@ -75,4 +89,4 @@ const Papel = ({obrasPapel}) => {
   )
 }
 
-export default Papel
+export default Tela

@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <header>
       <h1>PICANTE SERIGRAFÍA</h1>
-      <button onClick={handleNavbar} >MENU</button>
+      <button onClick={handleNavbar} >Menu</button>
       {open && <Navbar opacity={opacity} foo={handleNavbar}/>}
       {open && <button className="closeBtn" onClick={handleNavbar} style={{opacity: opacity, transition:"all 0.5s ease-in-out"}}>X</button>}
     </header>

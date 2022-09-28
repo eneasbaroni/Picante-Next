@@ -16,6 +16,11 @@ body {
 * {
   list-style: none;  
   font-family: 'Assistant', sans-serif; 
+  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Krub', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  
   font-size: 16px;  
   margin: 0;
   padding: 0;  
@@ -52,12 +57,13 @@ h1, h2, h3, h4, h5, h6, button, button a {
 }
 
 h2 {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + 3vw);
 }
 
 p {
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.5rem + 1.5vw);
 }
+
 
 .divContainer {
   /* ver margin top en otras querys */
@@ -95,6 +101,19 @@ p {
     var(--main-color) 15px,
     var(--main-color) 20px
   );
+}
+
+/* Media Querys */
+@media screen and (max-width: 768px) {
+  p {
+    font-size: calc(0.5rem + 2vw);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  p {
+    font-size: calc(0.5rem + 3vw);
+  }
 }
 
 

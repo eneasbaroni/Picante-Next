@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
@@ -7,18 +8,18 @@ import database from '../../db/database'
 export const getStaticProps = async () => { 
 
   const obras = database
-  const obrasPapel = obras.papel
+  const obrasFeria = obras.feria
 
   return {
     props: {
-      obrasPapel
+      obrasFeria
     },
     revalidate: 3600
   } 
 }
 
-const Papel = ({obrasPapel}) => {
-
+const Feria = ({obrasFeria}) => {
+  
   const [imgGrande, setImgGrande] = useState(false)
   const [imgGrandeSrc, setImgGrandeSrc] = useState("")
   const [visible, setVisible] = useState("0%")
@@ -46,12 +47,12 @@ const Papel = ({obrasPapel}) => {
   return (
     <Layout> 
       <main className="galeriaContainer">
-        <h1>TRABAJOS EN PAPEL</h1>
+        <h1>FERIA PICANTE</h1>
 
         <div className="imagesGalleryContainer">
-          {obrasPapel.map((obra, i) => (            
+          {obrasFeria.map((obra, i) => (            
             <div className="imageContainer" style={{transform: `rotate( ${ getRandom(-5, 10) }deg )`}} key={i} onClick={handleClick}>
-              <Image src={`/images/papel/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600} alt={obra.title} />              
+              <Image src={`/images/feria/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600} alt={obra.title} />              
             </div>
           ))}
         </div>
@@ -59,10 +60,24 @@ const Papel = ({obrasPapel}) => {
         {imgGrande &&
           <div className="imgGrandeContainer" style={{opacity: visible}} onClick={offImgGrande}>
             <div className="imgGrande">
-              <Image  layout="fill" objectFit="contain" src={`/images/papel/${imgGrandeSrc}`} alt="imgGrande"/>
+              <Image  layout="fill" objectFit="contain" src={`/images/feria/${imgGrandeSrc}`} alt="imgGrande"/>
             </div>
           </div> 
         }
+
+        <p className="inicioPresupuesto">
+          <span>QUERES PARTICIPAR DE LA FERIA?</span><br/>
+          COMPLETÁ EL FORMULARIO DE PARTICIPACION PARA QUE NOS PODAMOS PONER EN CONTACTO CON VOS
+        </p>
+        <Link href="/feria-formulario">
+          <button className="toFormularioBtn">
+            IR A FORMULARIO
+            <Image src='/images/arrow.svg' objectFit="contain" layout="fill" alt="Arrow" ></Image>
+            <Image src='/images/arrow.svg' objectFit="contain" layout="fill" alt="Arrow" className="arrow2" ></Image>
+            <Image src='/images/arrow.svg' objectFit="contain" layout="fill" alt="Arrow" className="arrow3" ></Image>
+          </button>
+        </Link>
+
 
         <button onClick={() => router.back()}>
           <Image src='/images/arrow.svg' objectFit="contain" layout="fill" alt="Arrow" ></Image>
@@ -71,8 +86,8 @@ const Papel = ({obrasPapel}) => {
           BACK TO HOME
         </button>
       </main>
-    </Layout>
+    </Layout> 
   )
 }
 
-export default Papel
+export default Feria

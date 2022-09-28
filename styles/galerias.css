@@ -1,5 +1,5 @@
 .galeriasContainer {
-  padding-top: 2rem;
+  padding-top: 3rem;
   grid-column: 1 / span 12;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -47,18 +47,15 @@
   transform: rotate(-2deg);
 }
 
-.galBtnA:hover {
-  grid-column: 4 / span 7;
+.galBtnA:hover {  
   transform: translate(7px, 7px) rotate(5deg) ;
   box-shadow: none;
 }
-.galBtnB:hover {
-  grid-column: 7 / span 7;
+.galBtnB:hover {  
   transform: rotate(-5deg) translate(7px, 7px);
   box-shadow: none;
 }
-.galBtnC:hover {
-  grid-column: 4 / span 7;
+.galBtnC:hover {  
   transform: rotate(-2deg) translate(7px, 7px);
   box-shadow: none;
 }
@@ -78,6 +75,10 @@
     background-color: var(--main-bg);
     cursor: pointer;
     font-size: calc(0.8rem + 1vw);
+  }
+
+  .galeriasContainer h2 {
+    font-size: calc(8vw);  
   }
   
   .galBtnA {

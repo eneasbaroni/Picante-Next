@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Contacto from "../Contacto/Contacto"
+
 import Galerias from "../Galerias/Galerias"
 
 
@@ -46,6 +47,7 @@ const Inicio = () => {
 
 
       <Contacto/>
+      
 
 
 
