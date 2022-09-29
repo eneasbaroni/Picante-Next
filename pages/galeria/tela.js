@@ -54,7 +54,7 @@ const Tela = ({obrasTela}) => {
         <div className="imagesGalleryContainer">
           {obrasTela[0].map((obra, i) => (            
             <div className="imageContainer" style={{transform: `rotate( ${ getRandom(-5, 10) }deg )`}} key={i} onClick={handleClick}>
-              <Image src={`/images/tela/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600}  alt={obra.title} />              
+              <Image src={`/images/tela/${obra.src}`} placeholder='blur' blurDataURL={`/images/tela/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600}  alt={obra.title} />              
             </div>
           ))}
         </div>
@@ -65,7 +65,7 @@ const Tela = ({obrasTela}) => {
         <div className="imagesGalleryContainer">
           {obrasTela[1].map((obra, i) => (            
             <div className="imageContainer colorB" style={{transform: `rotate( ${ getRandom(-5, 10) }deg )`}} key={i} onClick={handleClick}>
-              <Image src={`/images/tela/${obra.src}`} objectFit='cover' name={obra.src} height={600} width={600}  alt={obra.title} />              
+              <Image src={`/images/tela/${obra.src}`} placeholder='blur' blurDataURL={`/images/tela/${obra.src}`} objectFit='cover' name={obra.src} height={600} width={600}  alt={obra.title} />              
             </div>
           ))}
         </div>

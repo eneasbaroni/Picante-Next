@@ -52,7 +52,7 @@ const Feria = ({obrasFeria}) => {
         <div className="imagesGalleryContainer">
           {obrasFeria.map((obra, i) => (            
             <div className="imageContainer" style={{transform: `rotate( ${ getRandom(-5, 10) }deg )`}} key={i} onClick={handleClick}>
-              <Image src={`/images/feria/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600} alt={obra.title} />              
+              <Image src={`/images/feria/${obra.src}`} placeholder='blur' blurDataURL={`/images/feria/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600} alt={obra.title} />              
             </div>
           ))}
         </div>
