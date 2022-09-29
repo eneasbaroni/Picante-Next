@@ -116,7 +116,7 @@
 .imgA:hover, .imgB:hover, .imgMiddleA:hover, .imgMiddleB:hover {   
   background:none;  
   transform: rotate( 0 ) scale(1.1)!important;  
-  z-index: 100;
+  z-index: 70;
 }
 
 .inicioPresupuesto {
