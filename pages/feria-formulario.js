@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { useState } from "react"
 import Layout from "../components/Layout/Layout"
 
@@ -44,6 +45,11 @@ const FeriaFormulario = () => {
     <Layout>
       <main className="formularioContainer">
         <h1>FORMULARIO ARTISTA</h1>
+
+        <div className='formularioP'>
+          <div className="circleContainer"><Image src='/images/contact/circle.svg' layout='fill' objectFit='contain' alt='picante serigrafia'></Image></div>
+          <p> Querés participar de la próxima feria? Dejanos tus datos asi nos ponemos en contacto </p>
+        </div>
 
         <form className="formulario" onSubmit={sendData}>
         {/* <legend>Formulario de Presupuesto</legend>    */}     

@@ -5,6 +5,7 @@
   --third-color: #b33f4c;    
   --main-bg: #fad3e0;  
   --second-bg: #fbd4ca;  
+  --second-bg: #fbe7ca;  
   --main-border: 3px solid var(--main-color);
   --second-border: 3px solid var(--second-color);
 }

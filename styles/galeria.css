@@ -81,7 +81,8 @@
 
 .imageContainer:hover {  
   background:none; 
-  transform: rotate( 0.05deg ) !important;   
+  transform: rotate( 0.05deg ) scale(1.1) !important;   
+  z-index: 80;
 }
 
 /* Big Image */

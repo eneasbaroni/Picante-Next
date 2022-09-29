@@ -12,7 +12,7 @@ const Footer = () => {
         </div> */}
 
         <div className='ubication'>
-          <Image src='/images/contact/mapa.png' width={600} height={400} layout='fill' objectFit='cover' alt='mapa' />
+          <Image src='/images/contact/mapa.png' layout='fill' objectFit='cover' alt='mapa' />
         </div> 
 
         <div className='infoLinks'>
