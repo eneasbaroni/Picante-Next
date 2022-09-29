@@ -241,13 +241,24 @@
     height: 40vw;  
   }
 
-  .imgA, .imgB, .imgMiddleA, .imgMiddleB {
+  .imgA {
+    grid-column: auto / span 6;    
+    margin: 0 2rem 0;       
+  }
+
+  .imgB {
     grid-column: auto / span 6;    
     margin: 0 2rem 0; 
+  }
+
+  .imgMiddleA, .imgMiddleB {
+    grid-column: auto / span 6;    
+    margin: -2rem 2rem 0; 
   }   
   
   .imgC {
     grid-column: 4 / span 6;
+    margin-top: -2rem
   }
 
   .imagesContainer {
