@@ -60,7 +60,7 @@ const Feria = ({obrasFeria}) => {
         {imgGrande &&
           <div className="imgGrandeContainer" style={{opacity: visible}} onClick={offImgGrande}>
             <div className="imgGrande">
-              <Image  layout="fill" objectFit="contain" src={`/images/feria/${imgGrandeSrc}`} alt="imgGrande"/>
+              <Image  layout="fill" objectFit="contain" placeholder='blur' blurDataURL={`/images/feria/${imgGrandeSrc}`} src={`/images/feria/${imgGrandeSrc}`} alt="imgGrande"/>
             </div>
           </div> 
         }
