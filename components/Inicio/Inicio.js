@@ -1,29 +1,35 @@
 import Image from "next/image"
 import Link from "next/link"
 import Galerias from "../Galerias/Galerias"
+import {Link as Linko} from 'react-scroll/modules'
 
 
 const Inicio = () => {
   return (
     <div className="inicioContainer">
-      <div className="homeImgA"><Image src='/images/home/bienvenidos.png' objectFit="contain" layout="fill" alt="Home Banner"></Image></div>
-      <div className="homeImgB"><Image src='/images/home/a.png' objectFit="contain" layout="fill" alt="Home Banner"></Image></div>
-      <div className="homeImgC"><Image src='/images/home/picante.png' objectFit="contain" layout="fill" alt="Home Banner"></Image></div>
-      <div className="homeInfo">
-        <h2>QUE ES PICANTE?</h2>
-        <p>Picante, es un taller de serigrafía independiente/autogestivo fundado en 2016.<br/>
-          Trabajamos con emprendedores, artistas y comerciantes de diferentes rubros; con nuestro oficio ayudamos a muchos a cumplir sus sueños, creando productos y obras únicas e irrepetibles.<br/>
-          Te invitamos a conocer más sobre esta técnica de impresión manual, visitá nuestra galería y nuestra fanpage ♥.
-        </p>
-      </div>
+      {/* <div className="homeImgA"><Image src='/images/home/bienvenidos.png' objectFit="contain" layout="fill" alt="Home Banner"></Image></div>
+      <div className="homeImgB"><Image src='/images/home/a.png' objectFit="contain" layout="fill" alt="Home Banner"></Image></div> */}
 
-      <div className="imagesContainer">
+      <div className="homeContainer">
+        <div className="homeImgC"><Image src='/images/home/picante.svg' objectFit="contain" layout="fill" alt="Home Banner"></Image></div>
+        <button className="clickme"><Linko smooth='true' offset={50} duration={500} to="homeInfo">CLICK<br/>ME</Linko></button>
+      </div>
+      
+      <div className="homeInfo" id="homeInfo">
+        <div className="homeInfoText">
+          <h2>QUE ES PICANTE?</h2>
+          <p>Picante, es un taller de serigrafía independiente/autogestivo fundado en 2016.<br/>
+            Trabajamos con emprendedores, artistas y comerciantes de diferentes rubros; con nuestro oficio ayudamos a muchos a cumplir sus sueños, creando productos y obras únicas e irrepetibles.<br/>
+            Te invitamos a conocer más sobre esta técnica de impresión manual, visitá nuestra galería y nuestra fanpage ♥.
+          </p>
+        </div>
+
         <div className="imgA"><Image src='/images/home/home01.jpg' objectFit="cover" height={400} width={600} placeholder='blur' blurDataURL='/images/home/home01.jpg'/* layout="fill" */ alt="Home Banner"></Image></div>
         <div className="imgB"><Image src='/images/home/home02.jpg' objectFit="cover"  height={400} width={600} placeholder='blur' blurDataURL='/images/home/home02.jpg'  /* layout="fill" */ alt="Home Banner"></Image></div>
         <div className="imgA imgC"><Image src='/images/home/home03.jpg' objectFit="cover"  height={400} width={600} placeholder='blur' blurDataURL='/images/home/home03.jpg' /* layout="fill" */ alt="Home Banner"></Image></div>        
         <div className="imgA imgMiddleA"><Image src='/images/home/home05.jpg' objectFit="cover" height={400} width={600} placeholder='blur' blurDataURL='/images/home/home05.jpg' /* layout="fill" */ alt="Home Banner"></Image></div>
         <div className="imgB imgMiddleB"><Image src='/images/home/home04.jpg' objectFit="cover" height={400} width={600} placeholder='blur' blurDataURL='/images/home/home04.jpg'/* layout="fill" */ alt="Home Banner"></Image></div>
-      </div>
+      </div>      
       
       <Galerias/> 
 

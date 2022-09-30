@@ -35,7 +35,8 @@ const Footer = () => {
       </div>    
 
       <div className="footerImgContainer">
-        <Image src='/images/contact/footer.svg' width={1920} height={614} objectFit='cover' alt='equipo' />
+        {/* <Image src='/images/contact/footer.svg' width={1920} height={614} objectFit='cover' alt='equipo' /> */}
+        <div className="image"></div>
       </div>
 
     </footer>

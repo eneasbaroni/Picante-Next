@@ -3,11 +3,42 @@
   --main-color: #162a7c;
   --second-color: #04839d;
   --third-color: #b33f4c;    
+  --main-bg: #ddb2c0;  
   --main-bg: #fad3e0;  
   --second-bg: #fbd4ca;    
   --main-border: 3px solid var(--main-color);
   --second-border: 3px solid var(--second-color);
+  --main-filter: invert(10%) sepia(56%) saturate(4578%) hue-rotate(226deg) brightness(97%) contrast(94%);
 }
+
+/* :root {     
+  --main-color: #c2238d;  
+  --main-bg: #dfee59;  
+  --second-bg: #fbd4ca;   
+  --main-filter: invert(21%) sepia(56%) saturate(3042%) hue-rotate(297deg) brightness(102%) contrast(99%);
+}
+
+:root {     
+  --main-color: #08032e;  
+  --main-bg: #942222;  
+  --second-bg: #fbd4ca;   
+  --main-filter: invert(6%) sepia(36%) saturate(4300%) hue-rotate(237deg) brightness(89%) contrast(111%);
+}
+
+:root {     
+  --main-color: #08032e;    
+  --main-bg: #da5f18;  
+  --second-bg: #fbd4ca;   
+  --main-filter: invert(6%) sepia(36%) saturate(4300%) hue-rotate(237deg) brightness(89%) contrast(111%);
+}
+
+:root {     
+  --main-color: #cf552c;    
+  --main-bg: #253022;  
+  --second-bg: #fbd4ca; 
+  --second-border: 3px solid #081c36  ;  
+  --main-filter: invert(45%) sepia(16%) saturate(7453%) hue-rotate(346deg) brightness(86%) contrast(86%);
+} */
 
 
 @font-face {

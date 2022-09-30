@@ -125,7 +125,7 @@
 .galeriaContainer button img{
   transform: translate(-9rem, 0) rotate(90deg); 
   padding: 0.5rem !important;
-  filter: invert(10%) sepia(49%) saturate(5444%) hue-rotate(230deg) brightness(96%) contrast(96%)
+  filter: var(--main-filter)
  }
  
  .galeriaContainer button .arrow2{
@@ -179,7 +179,7 @@
   .galeriaContainer button img{
     transform: translate(-4rem, 0) rotate(90deg); 
     padding: 0.5rem !important;
-    filter: invert(10%) sepia(49%) saturate(5444%) hue-rotate(230deg) brightness(96%) contrast(96%)
+    filter: var(--main-filter)
    }
    
    .galeriaContainer button .arrow2{

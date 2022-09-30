@@ -11,19 +11,15 @@
 }
 
 .galeriasContainer h2 { 
-  margin-top: 2rem;  
-  border-top: 2px solid var(--main-color);
+  margin-top: 2rem; 
 }
 
-.galeriasContainer button  {
-  /* grid-column: auto / span 7; */  
+.galeriasContainer button  {   
   margin: -1rem 1rem 0; 
   width: 30rem;
-  height: 10rem;
-  /* background-color: transparent; */
+  height: 10rem;  
   border: var(--main-border);
-  box-shadow: 7px 7px 0 0 var(--main-color) ;
-  /* background-color: var(--main-bg); */
+  box-shadow: 7px 7px 0 0 var(--main-color) ;  
   background-color: var(--second-bg);
   cursor: pointer;
   font-size: calc(1rem + 1.5vw);
@@ -73,6 +69,7 @@
   }
 
   .galeriasContainer h2 {
+    margin-top: 1rem; 
     font-size: calc(8vw);  
   }
   
@@ -88,6 +85,12 @@
 }
 
 @media screen and (max-width: 576px) {
+
+  .galeriasContainer h2 { 
+    margin-top: 0; 
+  }
+
+
   .galeriasContainer button  {    
     width: 80vw;
     height: 30vw; 

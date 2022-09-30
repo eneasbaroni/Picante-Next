@@ -2,41 +2,30 @@
   padding: 0 5rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);  
-  z-index: 10 !important;
+  z-index: 10 !important;  
 }
 
-.homeImgA, .homeImgB {
-  position: relative;
+.homeContainer {
   grid-column: 1 / span 12;
-  /* height: 10rem; */
-  height: calc((100vh - 280px) / 3);
-  width: 80vw !important; 
-  margin-left: auto;   
-  margin-right: auto;
-}
-
-.homeImgA {
-  margin-top: 5rem;
-  transform: rotate( -5deg );  
-}
-
-.homeImgB {
-  transform: rotate( 5deg );  
+  height: calc(100vh - 84px);
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-template-rows: 2fr;
 }
 
 
 .homeImgC {
   position: relative;
-  grid-column: 1 / span 12;
+  grid-column: 1 / span 1;
   /* height: 20rem; */
-  height: calc((100vh - 280px) / 1.5);
-  width: 80vw !important; 
-  margin-left: auto;   
-  margin-right: auto;
+  height: 100%;  
+  width: 60vw !important; 
+  margin: auto;
   animation-name: efecto_logo;  
   animation-iteration-count: infinite;
   animation-duration: 3s;
-  animation-delay: 1s
+  animation-delay: 1s;
+  filter: var(--main-filter)
 }
 
 @keyframes efecto_logo {
@@ -48,21 +37,64 @@
   100%{transform: scale(1);}  
 }
 
+.clickme {
+  grid-column: 1 / span 1;
+  width: 7vw;
+  height: 7vw;  
+  margin: auto;
+  border-radius: 10rem;
+  background-color: var(--main-color);
+  color: var(--main-bg);
+  border: none;
+  animation:spin 10s linear infinite;
+  cursor: pointer;
+}
+
+.clickme a{  
+  font-size: 1.5vw;  
+  color: var(--main-bg);  
+}
+
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+
 .homeInfo {
   grid-column: 1 / span 12;
   text-align: center;
   margin-top: 5rem;
-}
-
-.imagesContainer {  
-  margin-top: 2rem;
-  grid-column: 1 / span 12;  
-  background-image: url('/images/dots-01.svg'); 
-  background-repeat: repeat-y;
-  background-position: 50% 50%;
-  background-size: 70%;
+  padding: 8rem 0;
   display: grid; 
   grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+
+.homeInfo::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; 
+  height: 100%;
+  background-image: url('/images/stripes.svg');
+  background-repeat: repeat;
+  background-size: 50%;
+  filter: var(--main-filter)
+  /* opacity: 0.5; */
+}
+
+.homeInfoText {
+  grid-column: 2 / span 10;
+  margin: 2rem auto;  
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: var(--main-bg);
+  background-color: var(--main-bg);
+  border: var(--main-border);
+  border-radius: 10px;
+  z-index: 20;
 }
 
 .imgA, .imgB {
@@ -152,7 +184,7 @@
 .toFormularioBtn img{
  transform: translate(9rem, 0) rotate(-90deg); 
  padding: 0.5rem !important;
- filter: invert(10%) sepia(49%) saturate(5444%) hue-rotate(230deg) brightness(96%) contrast(96%)
+ filter: var(--main-filter);
 }
 
 .toFormularioBtn .arrow2{
@@ -173,15 +205,18 @@
   .inicioContainer {
     padding: 0;    
   }
+
+  .clickme {    
+    width: 12vw;
+    height: 12vw;        
+  }
+  .clickme a{  
+    font-size: 3vw;        
+  }
+  
 }
 
-@media screen and (max-width: 768px) {
-  
-  .homeImgA, .homeImgB {
-    position: relative;
-    grid-column: 1 / span 12;
-    height: 20vw;      
-  }
+@media screen and (max-width: 768px) {  
 
   .homeImgC {
     position: relative;
@@ -191,7 +226,7 @@
 
   .homeInfo {    
     text-align: justify;
-    padding: 0 1rem;
+    padding: 3rem 1rem;
   }
 
   .homeInfo h2 {    
@@ -203,8 +238,7 @@
   }
 
   .imgMiddleA {    
-    margin: -5vw 0.5rem 3rem;
-      
+    margin: -5vw 0.5rem 3rem; 
   }
   
   .imgMiddleB {    
@@ -229,11 +263,14 @@
     padding: 0;    
   }
 
-  .homeImgA, .homeImgB {
-    position: relative;
-    grid-column: 1 / span 12;
-    height: 20vw; 
+  .clickme {    
+    width: 20vw;
+    height: 20vw;        
   }
+  .clickme a{  
+    font-size: 4vw;        
+  }
+ 
 
   .homeImgC {
     position: relative;
@@ -243,17 +280,26 @@
 
   .imgA {
     grid-column: auto / span 6;    
-    margin: 0 2rem 0;       
+    margin: 0 2rem 0;  
+    transform: rotate( -5deg ) translate(1.2rem, 0);     
   }
 
   .imgB {
     grid-column: auto / span 6;    
     margin: 0 2rem 0; 
+    transform: rotate( 5deg ) translate(-1.2rem, 0); 
   }
 
-  .imgMiddleA, .imgMiddleB {
+  .imgMiddleA{
     grid-column: auto / span 6;    
     margin: -2rem 2rem 0; 
+    transform: rotate( 1deg ) translate(1.2rem, 0) !important;
+  } 
+
+  .imgMiddleB {
+    grid-column: auto / span 6;    
+    margin: -2rem 2rem 0; 
+    transform: rotate( -5deg ) translate(-1.2rem, 0) !important;
   }   
   
   .imgC {
@@ -285,7 +331,7 @@
   .toFormularioBtn img{
     transform: translate(4rem, 0) rotate(-90deg); 
     padding: 0.5rem !important;
-    filter: invert(10%) sepia(49%) saturate(5444%) hue-rotate(230deg) brightness(96%) contrast(96%)
+    filter: var(--main-filter);
    }
    
    .toFormularioBtn .arrow2{

@@ -42,12 +42,12 @@
   grid-column: 7 / span 6;
   height: 40vw;
   position: relative;
-  border: solid 3px #5593a0;
+  border: solid 3px #885d75;
   /* margin: 5rem 2rem; */
-  background: #885d75 ; 
   background: #5d8188 ; 
+  background: #885d75 ; 
   transition: all .5s ease-in-out;
-  box-shadow: 7px 7px 0 0 #5593a0 ;
+  box-shadow: 7px 7px 0 0 #885d75 ;
 }
 
 .nosotrosContainer .equipoImg img {
