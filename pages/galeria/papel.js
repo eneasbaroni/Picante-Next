@@ -59,7 +59,7 @@ const Papel = ({obrasPapel}) => {
         {imgGrande &&
           <div className="imgGrandeContainer" style={{opacity: visible}} onClick={offImgGrande}>
             <div className="imgGrande">
-              <Image  layout="fill" objectFit="contain" placeholder='blur' blurDataURL={`/images/papel/${imgGrandeSrc}`} src={`/images/papel/${imgGrandeSrc}`} alt="imgGrande"/>
+              <Image  layout="fill" objectFit="contain" src={`/images/papel/${imgGrandeSrc}`} alt="imgGrande"/>
             </div>
           </div> 
         }

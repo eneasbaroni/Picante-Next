@@ -73,7 +73,7 @@ const Tela = ({obrasTela}) => {
         {imgGrande &&
           <div className="imgGrandeContainer" style={{opacity: visible}} onClick={offImgGrande}>
             <div className="imgGrande">
-              <Image  layout="fill" objectFit="contain" placeholder='blur' blurDataURL={`/images/tela/${imgGrandeSrc}`} src={`/images/tela/${imgGrandeSrc}`} alt="imgGrande"/>
+              <Image  layout="fill" objectFit="contain" src={`/images/tela/${imgGrandeSrc}`} alt="imgGrande"/>
             </div>
           </div> 
         }
