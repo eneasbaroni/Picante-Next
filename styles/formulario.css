@@ -82,7 +82,7 @@
 }
 
 .enviarBtn {
-  color: var(--main-bg);  
+  color: var(--main-color);  
 }
 
 .enviarBtnDesabilitado {
@@ -130,14 +130,6 @@
   box-shadow: 7px 7px 0 0 grey;   
   transform: rotate(-4deg);
 } */
-
-.formularioContainer .enviarBtn:hover{  
-  transform: translate(7px, 7px) rotate(-4deg);
-  box-shadow: none;  
-}
-
-
-
 
 /* Media Querys */
 
@@ -210,4 +202,33 @@
   }
 
 
+}
+
+
+
+/* swall */
+.swal2-popup {
+  border-radius: 0 !important;  
+  width: 80vw;
+  border-radius: 0;
+  border: var(--main-border) !important;
+  box-shadow: 7px 7px 0 0 var(--main-color) ;
+}
+
+.swal2-html-container {
+  font-size: 0.9rem ;
+  color: var(--main-color);
+  font-weight: 200 ;
+  font-family: 'Titillium Web', sans-serif;  
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: var(--second-bg);    
+  border-radius: 0;
+  font-weight: 200 ;
+  font-family: 'Anton', sans-serif;   
+}
+
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+  background-color: rgb(15, 15, 15) !important;
 }

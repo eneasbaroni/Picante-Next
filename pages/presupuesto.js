@@ -1,6 +1,8 @@
 import Image from "next/image"
 import { useState } from "react"
 import Layout from "../components/Layout/Layout"
+import Swal from "sweetalert2"
+import { useRouter } from "next/router"
 
 const Input = ({placeholder, name, label, foo}) => { 
   return (
@@ -13,6 +15,8 @@ const Input = ({placeholder, name, label, foo}) => {
 
 
 const Presupuesto = () => {
+
+  const router = useRouter()
 
   const [user, setUser] = useState({
     nombre:"",
@@ -36,6 +40,23 @@ const Presupuesto = () => {
   const sendData = (e) => {
     e.preventDefault();  
     console.log(user);
+
+    Swal.fire({
+      html:'Formulario Enviado!',
+      confirmButtonText: "VOLVER AL INICIO"
+    })
+
+    
+    /* createCommentary(comment).then(data => 
+      Swal.fire({
+      html:data,
+      confirmButtonText: "VOLVER AL INICIO"
+    })) */   
+    
+    setTimeout(() => {
+      router.push("/")              
+    }, 900);
+
   }
 
   // Expresiones regulares para los campos del formulario
