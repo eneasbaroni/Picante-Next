@@ -99,7 +99,7 @@ const Presupuesto = () => {
         {/* <label htmlFor='descripcion'>Breve Descripción</label>
         <input required placeholder='DESCRIPCION DEL TRABAJO A REALIZAR' className="userInput lastInput" type="text" name='descripcion' id='descripcion' onChange={handleInputChange}></input> */}
 
-        {nombreRegex.test(user.name) && apellidoRegex.test(user.apellido) && telefonoRegex.test(user.telefono) && emailRegex.test(user.email) && user.medida && user.cantidad && user.descripcion
+        {nombreRegex.test(user.nombre) && apellidoRegex.test(user.apellido) && telefonoRegex.test(user.telefono) && emailRegex.test(user.email) && user.medida && user.cantidad && user.descripcion
           ?<button className="col-2 enviarBtn" type="submit">Enviar</button>        
           :<button className="col-2 enviarBtnDesabilitado" disabled type="submit">ENVIAR</button>
         }        

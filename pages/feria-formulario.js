@@ -71,7 +71,7 @@ const FeriaFormulario = () => {
         <Input placeholder="E-mail" name="email" label="Email" foo={handleInputChange}/> 
         <Input placeholder="Agregá una breve descripción del trabajo a realizar" name="descripcion" label="Breve Descripción" foo={handleInputChange}/> 
 
-        {nombreRegex.test(user.name) && apellidoRegex.test(user.apellido) && telefonoRegex.test(user.telefono) && emailRegex.test(user.email) && user.descripcion
+        {nombreRegex.test(user.nombre) && apellidoRegex.test(user.apellido) && telefonoRegex.test(user.telefono) && emailRegex.test(user.email) && user.descripcion
           ?<button className="col-2 enviarBtn" type="submit">Enviar</button>        
           :<button className="col-2 enviarBtnDesabilitado" disabled type="submit">Enviar</button>
         }        
