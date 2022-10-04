@@ -43,23 +43,23 @@ const Presupuesto = () => {
     e.preventDefault();  
     console.log(user);
 
-    Swal.fire({
+    /* Swal.fire({
       html:'Formulario Enviado!',
       confirmButtonText: "VOLVER AL INICIO"
     })
       
       setTimeout(() => {
       router.push("/")              
-    }, 900);
+    }, 900); */
 
 
     
-    /* send(
+    send(
       //los keys de emailJS https://www.emailjs.com/
-      process.env.SERVICE_ID,
-      process.env.TEMPLATE_ID,
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
       user,
-      process.env.USER_ID 
+      process.env.NEXT_PUBLIC_USER_ID 
     )
      .then((response) => {
       
@@ -77,7 +77,7 @@ const Presupuesto = () => {
       .catch((err) => {
       
       console.log('FAILED...', err);
-    }); */
+    });
   }    
 
   
