@@ -67,23 +67,9 @@ const Presupuesto = () => {
       
       console.log('FAILED...', err);
     });
-  }
+  }    
 
-    Swal.fire({
-      html:'Formulario Enviado!',
-      confirmButtonText: "VOLVER AL INICIO"
-    })
-
-    
-    /* createCommentary(comment).then(data => 
-      Swal.fire({
-      html:data,
-      confirmButtonText: "VOLVER AL INICIO"
-    })) */   
-    
-    
-
-  }
+  
 
   // Expresiones regulares para los campos del formulario
   const nombreRegex = /^[\s\S]{2,25}$/i
