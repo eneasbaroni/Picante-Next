@@ -36,14 +36,41 @@ const FeriaFormulario = () => {
     e.preventDefault();  
     console.log(user);
 
-    Swal.fire({
+    send(
+      //los keys de emailJS https://www.emailjs.com/
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      user,
+      process.env.NEXT_PUBLIC_USER_ID 
+    )
+     .then((response) => {
+      
+      Swal.fire({
+      html:'Formulario Enviado!',
+      confirmButtonText: "VOLVER AL INICIO"
+    })
+      
+      setTimeout(() => {
+      router.push("/")              
+    }, 500);
+
+      
+    })
+      .catch((err) => {
+      
+      console.log('FAILED...', err);
+    });
+
+    
+
+    /* Swal.fire({
       html:'Formulario Enviado!',
       confirmButtonText: "VOLVER AL INICIO"
     })
 
     setTimeout(() => {
       router.push("/")              
-    }, 900);
+    }, 900); */
   }
 
   // Expresiones regulares para los campos del formulario

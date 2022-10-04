@@ -46,7 +46,7 @@ footer {
   border-right: var(--main-border);
   position: relative;
   height: 100%;
-
+  cursor: pointer;
 }
 
 

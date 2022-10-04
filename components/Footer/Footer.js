@@ -10,10 +10,13 @@ const Footer = () => {
         {/* <div  className="ubication">
           <p>Visitá nuestro taller en <br/> Augusto López 429, Córdoba AR</p>
         </div> */}
-
-        <div className='ubication'>
+        
+          <div className='ubication'>
+          <a  href="https://g.page/picante-serigrafia?share" target="_blank" rel="noreferrer" >
           <Image src='/images/contact/mapa.png' layout='fill' objectFit='cover' alt='mapa' />
-        </div> 
+          </a>
+          </div>
+         
 
         <div className='infoLinks'>
           <p>Visitá nuestro taller en <br/> Augusto López 429, Córdoba AR</p>
