@@ -4,6 +4,8 @@ import Layout from "../components/Layout/Layout"
 import Swal from "sweetalert2"
 import { useRouter } from "next/router"
 
+import { send } from "emailjs-com"
+
 const Input = ({placeholder, name, label, foo}) => { 
   return (
     <>
@@ -40,6 +42,32 @@ const Presupuesto = () => {
   const sendData = (e) => {
     e.preventDefault();  
     console.log(user);
+    
+    send(
+      //los keys de emailJS https://www.emailjs.com/
+      process.env.REACT_APP_JS_SERVICE_ID,
+      process.env.REACT_APP_JS_TEMPLATE_ID,
+      user,
+      process.env.REACT_APP_JS_USER_ID 
+    )
+     .then((response) => {
+      
+      Swal.fire({
+      html:'Formulario Enviado!',
+      confirmButtonText: "VOLVER AL INICIO"
+    })
+      
+      setTimeout(() => {
+      router.push("/")              
+    }, 900);
+
+      
+    })
+      .catch((err) => {
+      
+      console.log('FAILED...', err);
+    });
+  }
 
     Swal.fire({
       html:'Formulario Enviado!',
@@ -53,9 +81,7 @@ const Presupuesto = () => {
       confirmButtonText: "VOLVER AL INICIO"
     })) */   
     
-    setTimeout(() => {
-      router.push("/")              
-    }, 900);
+    
 
   }
 
