@@ -7,8 +7,8 @@ const Layout = ({children}) => {
     <>    
       <Head>
         <title>Picante Serigrafía </title>
-        <meta name='description' content='Picante es un emprendimiento de serigrafía que ademas tambien funciona como marca de indumentaria con diseños personalizados, únicos, singulares y puros. Nos caracterizamos por la calidad y la creatividad' />
-        <meta name="keywords"  content="serigrafía, estampado, indumentaria, emprendimiento, tela, textil, arte, galeria, calidad, creatividad, córdoba, argentina"/>           
+        <meta name='description' content='Picante es un emprendimiento de serigrafía de Córdoba que ademas tambien funciona como marca de indumentaria con diseños personalizados, únicos, singulares y puros. Nos caracterizamos por la calidad y la creatividad' />
+        <meta name="keywords"  content="serigrafia, cordoba, estampado, indumentaria, emprendimiento, tela, textil, arte, galeria, calidad, creatividad, córdoba, argentina, serigrafía"/>           
       </Head>
       <>
         <Header/>        
