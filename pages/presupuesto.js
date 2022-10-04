@@ -70,7 +70,7 @@ const Presupuesto = () => {
       
       setTimeout(() => {
       router.push("/")              
-    }, 900);
+    }, 500);
 
       
     })
