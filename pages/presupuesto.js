@@ -42,8 +42,19 @@ const Presupuesto = () => {
   const sendData = (e) => {
     e.preventDefault();  
     console.log(user);
+
+    Swal.fire({
+      html:'Formulario Enviado!',
+      confirmButtonText: "VOLVER AL INICIO"
+    })
+      
+      setTimeout(() => {
+      router.push("/")              
+    }, 900);
+
+
     
-    send(
+    /* send(
       //los keys de emailJS https://www.emailjs.com/
       process.env.REACT_APP_JS_SERVICE_ID,
       process.env.REACT_APP_JS_TEMPLATE_ID,
@@ -66,7 +77,7 @@ const Presupuesto = () => {
       .catch((err) => {
       
       console.log('FAILED...', err);
-    });
+    }); */
   }    
 
   
