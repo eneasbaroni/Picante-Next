@@ -56,10 +56,10 @@ const Presupuesto = () => {
     
     send(
       //los keys de emailJS https://www.emailjs.com/
-      process.env.SERVICE_ID,
-      process.env.TEMPLATE_ID,
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
       user,
-      '2OBErswXNSTY6-VjL'
+      process.env.NEXT_PUBLIC_USER_ID 
     )
      .then((response) => {
       
