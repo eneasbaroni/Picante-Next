@@ -50,13 +50,14 @@
   /* margin: 5rem 2rem; */
   background: #885d75 ; 
   background: #5d8188 ; 
+  background: #5d818881 ; 
   transition: all .5s ease-in-out;
   box-shadow: 7px 7px 0 0 #5593a0 ; 
 }
 
 .colorB {
   border: solid 3px #74385b;  
-  background: #885d75 ;  
+  background: #885d757c ;  
   box-shadow: 7px 7px 0 0 #74385b ; 
 }
 
@@ -69,6 +70,8 @@
   mix-blend-mode: soft-light;  
   -webkit-filter: grayscale(100%) contrast(200%);
   filter: grayscale(100%) contrast(200%);
+  -webkit-filter: grayscale(90%) contrast(200%);
+  filter: grayscale(90%) contrast(200%);
   opacity: 0.8;
   transition: all .5s ease-in-out;;    
 }
@@ -91,7 +94,7 @@
   position: fixed;
   top:0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.788);
+  background-color: rgba(0, 0, 0, 0.98);
   height: 100vh;
   width: 100vw;
   transition: all 0.5s ease-in-out;
