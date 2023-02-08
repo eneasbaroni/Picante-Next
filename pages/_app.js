@@ -7,6 +7,7 @@ import '../styles/galeria.css'
 import '../styles/formulario.css'
 import '../styles/nosotros.css'
 import '../styles/footer.css'
+import '../styles/cursos.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
