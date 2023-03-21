@@ -3,21 +3,22 @@ import Script from 'next/script'
 import { useEffect, useState } from 'react';
 
 const Cursos = () => {
-  const [scriptOnLoad, setScriptOnLoad] = useState(false)
-
-  /* insertar boton de MP en div */
-  const insertarBotonMP = () => {
-    if (typeof document === 'undefined') return;
-    const mpButton = document.querySelector('.mercadopago-button');
-    const divButton = document.getElementById('mpDiv');
-    if (mpButton) {
-      divButton.appendChild(mpButton);
-    }
-  }
 
   useEffect(() => {
-    insertarBotonMP();
-  }, [scriptOnLoad]);
+    const script = document.createElement("script");
+    script.src = "https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js";
+    script.async = true;
+    script.setAttribute("data-preference-id", "178809126-e10e745c-a9a2-40ae-827c-38019ab39fad");
+    script.setAttribute("data-source", "button");
+    script.setAttribute("data-button-label", "PAGAR");
+    document.getElementById("mpDiv").appendChild(script); 
+
+    return () => {
+      if (script && script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
 
 
   return (
@@ -44,16 +45,8 @@ const Cursos = () => {
                   Para inscribirte podés hacerlo mediante transferencia bancaria (Brubank Alias: picante.arte)<br/>
                   O bien, con tarjeta, mediante Mercado Pago en el siguiente botón:
                 </p>
-                             
-                <Script 
-                  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" 
-                  data-preference-id="178809126-e10e745c-a9a2-40ae-827c-38019ab39fad" 
-                  data-source="button" 
-                  data-button-label="PAGAR"
-                  onLoad={() => setScriptOnLoad(true)}
-                                  
-                />
-                <div id='mpDiv'></div>   
+
+                <div id="mpDiv"> </div> 
                 {/* <a href="https://mpago.la/1MNCLhU" rel='noreferrer' target="_blank" className='mpButton'><p>MERCADO PAGO</p></a> */}
 
                 <p>

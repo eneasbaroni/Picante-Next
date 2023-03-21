@@ -4,7 +4,7 @@ import Layout from "../components/Layout/Layout"
 import Swal from "sweetalert2"
 import { useRouter } from "next/router"
 
-import { send } from "emailjs-com"
+import { send } from "emailjs-com" 
 
 const Input = ({placeholder, name, label, foo}) => { 
   return (
