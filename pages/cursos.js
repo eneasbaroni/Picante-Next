@@ -16,15 +16,25 @@ const cursos = () => {
                 <p>
                   Bienvenid@ a esta experiencia.<br/>
                   Te invito a conectar con tu creatividad y expresión, mediante la serigrafía.<br/>
-                  Aprenderás a crear una Matriz Serigráfica con tu propio diseño. <br/>
+                  Aprenderás a crear una Matriz Serigráfica con tu propio diseño (o uno de los diseños que tenemos disponilbles) <br/>
                   Luego, vamos a imprimir sobre papel adhesivo con Tintas Vinilicas y crear fabulosos Stikers.<br/>
                   Además, vas a aprender a lavar y reacondicionar la matriz para futuros trabajos que quieras realizar. <br/>
-                  También, trabajaremos con Tintas al Agua, sobre Papel Obra, con un diseño predeterminado que te llevarás de recuerdo.
+                  Trabajaremos con Tintas al Agua, sobre Papel Obra, con un diseño predeterminado que te llevarás de recuerdo.
                 </p>
                 <h4>QUERES SABER MAS SOBRE ESTE CURSO?</h4>
-                <button className='donwloadBtn'>Descargá el PDF</button>
+                <a href="./documents/EXPERIENCIA_PICANTE-23.pdf" className='donwloadBtn' download>DESCARGA EL PDF</a>
                 
-                <button className='donwloadBtn'>QUIERO INSCRIBIRME</button>
+                <p>
+                  Para inscribirte podés hacerlo mediante transferencia bancaria (Brubank Alias: picante.arte)<br/>
+                  O bien, con tarjeta, mediante Mercado Pago en el siguiente botón:
+                </p>
+                <a href="https://mpago.la/1MNCLhU" rel='noreferrer' target="_blank" className='mpButton'><p>MERCADO PAGO</p></a>
+
+                <p>
+                  Una vez realizado el pago, completá el siguiente formulario con tus datos, fecha y horario elegido y el comprobante de pago.<br/>
+                  Cuando recibamos tu inscripción, te enviaremos un mail de confirmación.
+                </p>
+                <a href="https://forms.gle/t5K73mf8mXTyhNDz7" rel='noreferrer' target="_blank" className='cursoFormularioBtn'>FORMULARIO DE INSCRIPCIÓN</a>
                 
             </div>
         </main>

@@ -2,11 +2,32 @@ import Image from "next/image"
 import Link from "next/link"
 import Galerias from "../Galerias/Galerias"
 import {Link as Linko} from 'react-scroll/modules'
+import Ad from "../Ad/Ad"
+import { useEffect, useState } from "react"
 
 
 const Inicio = () => {
+  const [aciveAd, setAciveAd] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAciveAd(true)
+    }, 3000);    
+  }, [])
+
+  const closeAd = () => {
+    setAciveAd(false)
+  }
+  
+
+
   return (
     <div className="inicioContainer">
+
+      {aciveAd && <Ad closeAd={closeAd}/>}
+
+
+
       {/* <div className="homeImgA"><Image src='/images/home/bienvenidos.png' objectFit="contain" layout="fill" alt="Home Banner"></Image></div>
       <div className="homeImgB"><Image src='/images/home/a.png' objectFit="contain" layout="fill" alt="Home Banner"></Image></div> */}
 
@@ -14,6 +35,7 @@ const Inicio = () => {
         <div className="homeImgC"><Image src='/images/home/picante.svg' objectFit="contain" layout="fill" alt="Home Banner"></Image></div>
         <button className="clickme"><Linko smooth='true' offset={50} duration={500} to="homeInfo">CLICK<br/>ME</Linko></button>
       </div>
+      
       
       <div className="homeInfo" id="homeInfo">
         <div className="homeInfoText">

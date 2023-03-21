@@ -1,0 +1,52 @@
+#adContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.315);
+  /* blur background */
+  backdrop-filter: blur(5px);
+  transition: all 0.5s ease-in;
+}
+
+.adCard {
+  width: 70%;
+  min-height: 40%;
+  background-color: var(--main-color);
+  color: var(--main-bg);  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  transition: all 0.5s ease-in;
+  text-align: center  ;
+}
+
+.adCard *{  
+  color: var(--main-bg);   
+}
+
+.closeAd {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.adCard a {
+  text-decoration: none;  
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;  
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in;
+}
+
+.adCard a:hover {
+  color: var(--main-bg);
+}

@@ -42,7 +42,7 @@
 .cursosContainer .cursosInfo{
   grid-column: 1 / span 12;
   margin: 2rem auto;  
-  width: 70%;
+  width: 80%;
   display: flex;  
   flex-direction: column;
   justify-content: space-between;
@@ -78,12 +78,55 @@
   position: relative;
 }
 
+.donwloadBtn:hover { 
+  box-shadow: none;   
+  transform: translate(7px, 7px);
+}
+
+.mpButton {
+  color: var(--main-bg);
+  grid-column: 1 / span 12;  
+  text-align: center;
+  padding: 0;  
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 0 auto 2rem;
+  background-color: var(--main-color); 
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  transition: transform 2s ease-in-out;
+}
+
+.mpButton:hover {
+  transform: rotate(360deg);
+}
+
+.mpButton p {
+  font-size: 1.4rem;  
+  color: var(--main-bg); 
+  font-weight: 500;
+  font-family: 'Anton', sans-serif;
+}
+
+.cursoFormularioBtn {
+  grid-column: 1 / span 12;  
+  width: 20rem;
+  margin: 0.5rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+  border: var(--main-border);
+}
+
 
 /* Media Querys */
 
 @media screen and (max-width: 992px) {
   .cursosContainer video, .cursosContainer .cursosInfo {   
-    width: 85%;    
+    width: 80%;    
   }
 }
 
@@ -107,6 +150,16 @@
 
   .cursosContainer .cursosInfo h4 {  
     font-size: calc(0.8rem + 1vw);    
+  }
+
+  .donwloadBtn {    
+    font-size: 1.2rem; 
+    margin-bottom: 1rem !important;   
+  }
+
+  .cursoFormularioBtn {    
+    font-size: 1.2rem;
+    width: 90%;    
   }
 
 }

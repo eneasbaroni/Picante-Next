@@ -8,6 +8,8 @@ import '../styles/formulario.css'
 import '../styles/nosotros.css'
 import '../styles/footer.css'
 import '../styles/cursos.css'
+import '../styles/ad.css'
+
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
