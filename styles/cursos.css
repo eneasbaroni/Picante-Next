@@ -83,16 +83,16 @@
   transform: translate(7px, 7px);
 }
 
-.mpButton {
-  color: var(--main-bg);
+.mpButton, .mercadopago-button {
+  color: var(--main-bg) !important;
   grid-column: 1 / span 12;  
   text-align: center;
-  padding: 0;  
+  padding: 0 ;  
   width: 8rem;
   height: 8rem;
-  border-radius: 50%;
+  border-radius: 50% !important;
   margin: 0 auto 2rem;
-  background-color: var(--main-color); 
+  background-color: var(--main-color) !important; 
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -101,15 +101,15 @@
   transition: transform 2s ease-in-out;
 }
 
-.mpButton:hover {
+.mpButton:hover, .mercadopago-button:hover {
   transform: rotate(360deg);
 }
 
-.mpButton p {
-  font-size: 1.4rem;  
+.mpButton *, .mercadopago-button {
+  font-size: 1.4rem !important; 
   color: var(--main-bg); 
   font-weight: 500;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Anton', sans-serif !important;
 }
 
 .cursoFormularioBtn {
