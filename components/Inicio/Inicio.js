@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 
 
 const Inicio = () => {
-  const [aciveAd, setAciveAd] = useState(false)
+  /* const [aciveAd, setAciveAd] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
@@ -17,14 +17,14 @@ const Inicio = () => {
 
   const closeAd = () => {
     setAciveAd(false)
-  }
+  } */
   
 
 
   return (
     <div className="inicioContainer">
 
-      {aciveAd && <Ad closeAd={closeAd}/>}
+      {/* {aciveAd && <Ad closeAd={closeAd}/>} */}
 
 
 
