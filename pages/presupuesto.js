@@ -5,6 +5,7 @@ import Swal from "sweetalert2"
 import { useRouter } from "next/router"
 
 import { send } from "emailjs-com" 
+import Loader from "../components/Loader/Loader"
 
 const Input = ({placeholder, name, label, foo}) => { 
   return (
@@ -19,6 +20,7 @@ const Input = ({placeholder, name, label, foo}) => {
 const Presupuesto = () => {
 
   const router = useRouter()
+  const [loading, setLoading] = useState(false)
 
   const [user, setUser] = useState({
     nombre:"",
@@ -41,6 +43,7 @@ const Presupuesto = () => {
 
   const sendData = (e) => {
     e.preventDefault();  
+    setLoading(true)
     console.log(user);
 
     /* Swal.fire({
@@ -62,7 +65,7 @@ const Presupuesto = () => {
       process.env.NEXT_PUBLIC_USER_ID 
     )
      .then((response) => {
-      
+      setLoading(false)      
       Swal.fire({
       html:'Gracias por tu consulta<BR/>Te responderemos luego de analizar tu proyecto',
       confirmButtonText: "VOLVER AL INICIO"
@@ -91,6 +94,7 @@ const Presupuesto = () => {
 
   return (
     <Layout>
+      {loading && <Loader/>}
       <main className="formularioContainer">
         <h1>FORMULARIO DE PRESUPUESTO</h1>
 
