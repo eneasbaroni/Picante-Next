@@ -46,7 +46,7 @@ const FeriaFormulario = () => {
      .then((response) => {
       
       Swal.fire({
-      html:'Formulario Enviado!',
+      html:'Gracias por tu consulta<BR/>Te responderemos luego de analizar tu proyecto',
       confirmButtonText: "VOLVER AL INICIO"
     })
       
