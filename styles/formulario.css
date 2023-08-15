@@ -64,6 +64,23 @@
  display: none;
 }
 
+.formularioContainer .formulario .fileSelectorLabel{
+  grid-column: 1 / span 12;  
+  display:block;  
+  background-color: var(--main-color);
+  border: solid 3px var(--main-color);
+  border-bottom: none;
+  height: auto;  
+  padding: 1rem 0 ;
+  text-align: center;
+  /* font-family: "Monument"; */  
+  color:white;
+}
+
+.formularioContainer .formulario input[type="file"]{
+  display: none; 
+}
+
 .formularioContainer .formulario input, .formularioContainer .formulario select, .enviarBtn, .enviarBtnDesabilitado{
   grid-column: 1 / span 12;  
   background-color: transparent;

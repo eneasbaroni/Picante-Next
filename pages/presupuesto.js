@@ -3,8 +3,7 @@ import { useState } from "react"
 import Layout from "../components/Layout/Layout"
 import Swal from "sweetalert2"
 import { useRouter } from "next/router"
-
-import { send } from "emailjs-com" 
+import axios from 'axios';
 import Loader from "../components/Loader/Loader"
 
 const Input = ({placeholder, name, label, foo}) => { 
@@ -22,12 +21,13 @@ const Presupuesto = () => {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
 
+  const [selectedFile, setSelectedFile] = useState(null)
   const [user, setUser] = useState({
     nombre:"",
     apellido:"",
     telefono:"",
     email:"",
-    soporte:"",
+    soporte:"Tela",
     medida:"",
     cantidadColores:"",
     cantidad:"",
@@ -41,47 +41,59 @@ const Presupuesto = () => {
     })
   }  
 
+  const handleFileSelect = (event) => {
+    setSelectedFile(event.target.files[0])
+  }
+
+
+
   const sendData = (e) => {
     e.preventDefault();  
     setLoading(true)
-    console.log(user);
 
-    /* Swal.fire({
-      html:'Formulario Enviado!',
-      confirmButtonText: "VOLVER AL INICIO"
-    })
-      
-      setTimeout(() => {
-      router.push("/")              
-    }, 900); */
+    if (selectedFile) {
 
+      /* limitar el tamaño del archivo */
+      if (selectedFile.size > 10000000) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'El archivo es demasiado grande, el tamaño máximo es de 10MB',
+        })
+        setLoading(false)
+        return
+      }
 
-    
-    send(
-      //los keys de emailJS https://www.emailjs.com/
-      process.env.NEXT_PUBLIC_SERVICE_ID,
-      process.env.NEXT_PUBLIC_TEMPLATE_ID,
-      user,
-      process.env.NEXT_PUBLIC_USER_ID 
-    )
-     .then((response) => {
-      setLoading(false)      
-      Swal.fire({
-      html:'Gracias por tu consulta<BR/>Te responderemos luego de analizar tu proyecto',
-      confirmButtonText: "VOLVER AL INICIO"
-    })
-      
-      setTimeout(() => {
-      router.push("/")              
-    }, 500);
+      const formData = new FormData();
+      formData.append("file", selectedFile);
+      formData.append('nombre', user.nombre);
+      formData.append('apellido', user.apellido);
+      formData.append('telefono', user.telefono);
+      formData.append('email', user.email);
+      formData.append('soporte', user.soporte);
+      formData.append('medida', user.medida);
+      formData.append('cantidadColores', user.cantidadColores);
+      formData.append('cantidad', user.cantidad);
+      formData.append('descripcion', user.descripcion);
 
-      
-    })
-      .catch((err) => {
-      
-      console.log('FAILED...', err);
-    });
-  }    
+      axios.post("https://picante-server.onrender.com/send-budget", formData)
+        .then(response => {
+          console.log('respuesta del server', response.data);
+          setLoading(false)
+          Swal.fire({
+            html:'Gracias por tu consulta<BR/>Te responderemos luego de analizar tu proyecto',
+            confirmButtonText: "VOLVER AL INICIO"
+          })
+          setTimeout(() => {
+            router.push("/")              
+          }, 500);
+        })
+        .catch(error => {
+          console.log('error del server', error);
+          setLoading(false)
+        })
+    }
+  }
 
   
 
@@ -122,11 +134,19 @@ const Presupuesto = () => {
         <Input placeholder="MEDIDA DEL TRABAJO EN cm" name="medida" label="Medida del Trabajo" foo={handleInputChange}/> 
         <Input placeholder="CANTIDAD DE COLORES (máximo 5)" name="cantidadColores" label="Cantidad de Colores" foo={handleInputChange}/> 
         <Input placeholder="CANTIDAD DE COPIAS A REALIZAR" name="cantidad" label="Cantidad de Copias" foo={handleInputChange}/> 
-        <Input placeholder="DESCRIPCION DEL TRABAJO A REALIZAR" name="descripcion" label="Breve Descripción" foo={handleInputChange}/> 
+        <Input placeholder="DESCRIPCION DEL TRABAJO A REALIZAR" name="descripcion" label="Breve Descripción" foo={handleInputChange}/>
+
+        <>
+            
+            <label className="fileSelectorLabel" htmlFor="file">ADJUNTE UNA IMAGEN DE REFERENCIA - MAX 10MB</label>
+            <input className="fileSelector"  type="file" name="file" id="file" onChange={handleFileSelect}/>
+            
+        </> 
+
         {/* <label htmlFor='descripcion'>Breve Descripción</label>
         <input required placeholder='DESCRIPCION DEL TRABAJO A REALIZAR' className="userInput lastInput" type="text" name='descripcion' id='descripcion' onChange={handleInputChange}></input> */}
 
-        {nombreRegex.test(user.nombre) && apellidoRegex.test(user.apellido) && telefonoRegex.test(user.telefono) && emailRegex.test(user.email) && user.medida && user.cantidad && user.descripcion
+        {nombreRegex.test(user.nombre) && apellidoRegex.test(user.apellido) && telefonoRegex.test(user.telefono) && emailRegex.test(user.email) && user.medida && user.cantidad && user.descripcion && selectedFile
           ?<button className="col-2 enviarBtn" type="submit">Enviar</button>        
           :<button className="col-2 enviarBtnDesabilitado" disabled type="submit">ENVIAR</button>
         }        
