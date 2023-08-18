@@ -112,7 +112,7 @@ const Presupuesto = () => {
 
         <div className='formularioP'>
           <div className="circleContainer"><Image src='/images/contact/circle.svg' layout='fill' objectFit='contain' alt='picante serigrafia'></Image></div>
-          <p> Queres hacer un trabajo con nosotros? Dejanos tus datos asi podemos hacerte una cotización </p>
+          <p>Estas interes@do en nuestro trabajo?<br/>Completá el formulario para recibir una cotización.<br/>Gracias♥</p>
         </div>
 
         <form className="formulario" onSubmit={sendData}>
