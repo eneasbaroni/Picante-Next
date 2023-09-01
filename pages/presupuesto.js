@@ -6,6 +6,7 @@ import { useRouter } from "next/router"
 import axios from 'axios';
 import Loader from "../components/Loader/Loader"
 
+
 const Input = ({placeholder, name, label, foo}) => { 
   return (
     <>
@@ -111,8 +112,20 @@ const Presupuesto = () => {
         <h1>FORMULARIO DE PRESUPUESTO</h1>
 
         <div className='formularioP'>
-          <div className="circleContainer"><Image src='/images/contact/circle.svg' layout='fill' objectFit='contain' alt='picante serigrafia'></Image></div>
-          <p>Estas interes@do en nuestro trabajo?<br/>Completá el formulario para recibir una cotización.<br/>Gracias♥</p>
+          <div className="formImgContainer">
+            <Image src='/images/presupuesto/presupuesto.png' layout='fill' objectFit='contain' alt='picante serigrafia' className="prespImg"></Image>          
+            <a target="_blank" href="https://api.whatsapp.com/message/RH7JWEB4RJOWH1?autoload=1&app_absent=0" rel="noopener noreferrer">
+            
+             {/* eslint-disable-next-line @next/next/no-img-element */}
+             <img src='/images/presupuesto/btn-01.svg' alt='picante serigrafia' className="btn-01"></img>          
+            </a>        
+            <a target="_blank" href='./images/presupuesto/infografia.png' rel="noopener noreferrer">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src='/images/presupuesto/btn-02.svg'alt='picante serigrafia' className="btn-02"></img>      
+            </a>    
+            {/* <div className="circleContainerB"><Image src='/images/contact/circle.svg' layout='fill' objectFit='contain' alt='picante serigrafia'></Image></div> */}
+          </div>
+          {/* <p> Estas interes@do en nuestro trabajo?<br/>Completá el formulario para recibir una cotización.<br/>Gracias♥</p> */}
         </div>
 
         <form className="formulario" onSubmit={sendData}>

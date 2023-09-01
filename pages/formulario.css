@@ -53,6 +53,7 @@
 }
 
 .formImgContainer .btn-01:hover, .formImgContainer .btn-02:hover  {
+  transform: scale(1.05); 
   -webkit-filter: drop-shadow(5px 5px 5px var(--main-color));
   filter: drop-shadow(5px 5px 5px var(--main-color)); 
 }
