@@ -20,7 +20,7 @@ const Input = ({placeholder, name, label, foo}) => {
 const Presupuesto = () => {
 
   const router = useRouter()
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   const [selectedFile, setSelectedFile] = useState(null)
   const [user, setUser] = useState({
@@ -113,8 +113,8 @@ const Presupuesto = () => {
 
         <div className='formularioP'>
           <div className="formImgContainer">
-            <Image src='/images/presupuesto/presupuesto.png' layout='fill' objectFit='contain' alt='picante serigrafia' className="prespImg"></Image>          
-            <a target="_blank" href="https://api.whatsapp.com/message/RH7JWEB4RJOWH1?autoload=1&app_absent=0" rel="noopener noreferrer">
+            <Image src='/images/presupuesto/presupuesto.png' layout='fill' objectFit='contain' alt='picante serigrafia' className="prespImg" onLoad={() => setLoading(false)}></Image>          
+            <a target="_blank" href="https://wa.me/+5493415442366?text=Hola.%20Buen%20día.%20Necesito%20digitalizar%20mi%20diseño." rel="noopener noreferrer">
             
              {/* eslint-disable-next-line @next/next/no-img-element */}
              <img src='/images/presupuesto/btn-01.svg' alt='picante serigrafia' className="btn-01"></img>          
