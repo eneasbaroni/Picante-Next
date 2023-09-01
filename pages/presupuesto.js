@@ -109,23 +109,24 @@ const Presupuesto = () => {
     <Layout>
       {loading && <Loader/>}
       <main className="formularioContainer">
-        <h1>FORMULARIO DE PRESUPUESTO</h1>
-
+        <h1>FORMULARIO DE PRESUPUESTO</h1>       
         <div className='formularioP'>
           <div className="formImgContainer">
             <Image src='/images/presupuesto/presupuesto.png' layout='fill' objectFit='contain' alt='picante serigrafia' className="prespImg" onLoad={() => setLoading(false)}></Image>          
-            <a target="_blank" href="https://wa.me/+5493415442366?text=Hola.%20Buen%20día.%20Necesito%20digitalizar%20mi%20diseño." rel="noopener noreferrer">
             
-             {/* eslint-disable-next-line @next/next/no-img-element */}
-             <img src='/images/presupuesto/btn-01.svg' alt='picante serigrafia' className="btn-01"></img>          
-            </a>        
-            <a target="_blank" href='./images/presupuesto/infografia.png' rel="noopener noreferrer">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src='/images/presupuesto/btn-02.svg'alt='picante serigrafia' className="btn-02"></img>      
-            </a>    
-            {/* <div className="circleContainerB"><Image src='/images/contact/circle.svg' layout='fill' objectFit='contain' alt='picante serigrafia'></Image></div> */}
+            {loading !== true &&
+              <>
+                <a target="_blank" href="https://wa.me/+5493415442366?text=Hola.%20Buen%20día.%20Necesito%20digitalizar%20mi%20diseño." rel="noopener noreferrer">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src='/images/presupuesto/btn-01.svg' alt='picante serigrafia' className="btn-01"></img>          
+                </a>        
+                <a target="_blank" href='./images/presupuesto/infografia.png' rel="noopener noreferrer">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src='/images/presupuesto/btn-02.svg'alt='picante serigrafia' className="btn-02"></img>      
+                </a> 
+              </>
+            }  
           </div>
-          {/* <p> Estas interes@do en nuestro trabajo?<br/>Completá el formulario para recibir una cotización.<br/>Gracias♥</p> */}
         </div>
 
         <form className="formulario" onSubmit={sendData}>
