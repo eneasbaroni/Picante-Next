@@ -57,7 +57,7 @@ const Inicio = () => {
 
       <p className="inicioPresupuesto">
         <span>TENES ALGUN TRABAJO EN MENTE?</span><br/>
-        COMPLETÁ EL FORMULARIO DE PRESUPUESTO. LUEGO DE QUE NOS ENVÍES EL MISMO NOS PONDREMOS EN CONTACTO PARA ACLARAR DUDAS Y ENVIARTE EL PRESUPUESTO
+        COMPLETÁ EL FOMRULARIO DE PRESUPUESTO.<br/>EVALUAREMOS TU PROYECTO, Y TE ENVIAREMOS LA COTIZACIÓN.<br/>GRACIAS POR CONFIAR EN NUESTRO TRABAJO :)
       </p>
       <Link href="/presupuesto">
         <button className="toFormularioBtn">
