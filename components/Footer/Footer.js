@@ -19,7 +19,7 @@ const Footer = () => {
          
 
         <div className='infoLinks'>
-          <p>Visitá nuestro taller en <br/> Augusto López 420, Córdoba AR</p>
+          <p>Visitá nuestro taller con cita previa en <br/> Augusto López 1067, Córdoba AR</p>
           <div className='linksContainer'>
             <Link href="https://wa.me/+5493516558094">+54 9 351-6558094</Link>
             <Link href="https://www.instagram.com/picante.serigrafia/">@picante.serigrafia</Link>
