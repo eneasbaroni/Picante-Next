@@ -20,8 +20,8 @@ export default NextAuth({
         async signIn ({user}) {
           const { name, email, image } = user            
             try {
-              //const res = await fetch('https://picante-serigrafia.com.ar/api/user', {
-              const res = await fetch('http://localhost:3000/api/user', {
+              const res = await fetch('https://picante-serigrafia.com.ar/api/user', {
+              //const res = await fetch('http://localhost:3000/api/user', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, image })
