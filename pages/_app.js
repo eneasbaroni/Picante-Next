@@ -10,10 +10,15 @@ import '../styles/footer.css'
 import '../styles/cursos.css'
 import '../styles/ad.css'
 import '../styles/Loader.css'
+import '../styles/profile.css'
+import { SessionProvider } from 'next-auth/react'
 
-
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps, session }) {  
+  return (
+    <SessionProvider session={session}>
+      <Component {...pageProps} />
+    </SessionProvider>
+  )
 }
 
 export default MyApp
