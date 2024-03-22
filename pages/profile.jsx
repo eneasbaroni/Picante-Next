@@ -24,6 +24,7 @@ const Profile = () => {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={session.user.image} alt="profile img" />
                 <p>role: {session.user.role}</p>
+                {user.role && user.role === 'admin' && <p>Hola Administrador</p>}
                 <button onClick={() => signOut()}>Cerrar sesión</button>
               </>:
               <>
