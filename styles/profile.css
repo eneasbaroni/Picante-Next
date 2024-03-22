@@ -3,8 +3,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;  
-    max-width: 80vw;
-    margin: auto; 
+    max-width: 600px;
+    margin: 2rem auto 4rem; 
+    border: solid 3px var(--main-color);
+    box-shadow: 7px 7px 0 0 var(--main-color); 
+
+    @media screen and (max-width: 601px) {
+        width: 80vw;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    h2 {
+        line-height: calc(1rem + 3vw);
+    }
 
     img {
         border-radius: 50%;
