@@ -12,10 +12,36 @@ const Profile = () => {
 
     useEffect(() => {
       console.log('el estado de la sesion cambio', session);
-    }, [session])
+    }, [session])   
+
+    const popupCenter = (url, title) => {
+      const dualScreenLeft = window.screenLeft ?? window.screenX;
+      const dualScreenTop = window.screenTop ?? window.screenY;
+  
+      const width =
+        window.innerWidth ?? document.documentElement.clientWidth ?? screen.width;
+  
+      const height =
+        window.innerHeight ??
+        document.documentElement.clientHeight ??
+        screen.height;
+  
+      const systemZoom = width / window.screen.availWidth;
+  
+      const left = (width - 500) / 2 / systemZoom + dualScreenLeft;
+      const top = (height - 550) / 2 / systemZoom + dualScreenTop;
+  
+      const newWindow = window.open(
+        url,
+        title,
+        `width=${500 / systemZoom},height=${550 / systemZoom
+        },top=${top},left=${left}`
+      );
+  
+      newWindow?.focus();
+    };
     
-    
-    console.log('session', session)
+ 
     
 
   return (
@@ -34,8 +60,9 @@ const Profile = () => {
               <h2>Aun no has iniciado sesión</h2> 
               <p>Para acceder a esta sección y poder disfrutar de contenido exclusivo debes iniciar sesión con tu cuenta de Google</p> 
               {/* <button className="googleBtn" onClick={() => signIn()}>Iniciar sesion <img src="https://www.svgrepo.com/show/2778/google.svg" alt="google icon" /></button> */}
+              {/* <button className="googleBtn" onClick={() => signIn('google')}>Iniciar sesion <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png" alt="google icon" /></button> */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <button className="googleBtn" onClick={() => signIn('google')}>Iniciar sesion <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png" alt="google icon" /></button>
+              <button className="googleBtn" onClick={() => popupCenter("/google-signin", "Sample Sign In")} >Iniciar sesion <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png" alt="google icon" /></button>
             </>
           }
         </div>
