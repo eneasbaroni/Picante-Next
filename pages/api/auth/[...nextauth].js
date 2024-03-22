@@ -39,7 +39,7 @@ export default NextAuth({
 
         async session({ session }) {          
           try {
-            const res = await fetch(`http://localhost:3000/api/user?email=${session.user.email}`, {
+            const res = await fetch(`https://picante-serigrafia.com.ar/api/user?email=${session.user.email}`, {
               method: 'GET',
               headers: { 'Content-Type': 'application/json' },              
             })
