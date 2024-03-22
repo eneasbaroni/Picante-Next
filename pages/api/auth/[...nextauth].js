@@ -35,6 +35,26 @@ export default NextAuth({
             } catch (error) {
               console.log(error)
             }
+        },
+
+        async session({ session }) {          
+          try {
+            const res = await fetch(`http://localhost:3000/api/user?email=${session.user.email}`, {
+              method: 'GET',
+              headers: { 'Content-Type': 'application/json' },              
+            })
+            if (res.ok) {
+              const userData = await res.json()
+              console.log("🚀 ~ session ~ userData:", userData)
+              session.user.role = userData.role
+              return session
+            } else {
+              return session
+            }
+          } catch (error) {
+            console.log(error)
+            return session
+          }          
         }
     }
     

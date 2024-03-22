@@ -23,6 +23,7 @@ const Profile = () => {
                 <h2>{session.user.name}</h2>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={session.user.image} alt="profile img" />
+                <p>role: {session.user.role}</p>
                 <button onClick={() => signOut()}>Cerrar sesión</button>
               </>:
               <>
