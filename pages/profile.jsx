@@ -28,7 +28,7 @@ const Profile = () => {
               </>:
               <>
               <h1>BIENVENIDO</h1>
-              <h2>Aun no has iniciado sesión</h2> 
+              <h2>Aún no has iniciado sesión</h2> 
               <p>Para acceder a esta sección y poder disfrutar de contenido exclusivo debes iniciar sesión con tu cuenta de Google</p> 
               {/* <button className="googleBtn" onClick={() => signIn()}>Iniciar sesion <img src="https://www.svgrepo.com/show/2778/google.svg" alt="google icon" /></button> */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
