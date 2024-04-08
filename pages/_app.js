@@ -11,6 +11,7 @@ import '../styles/cursos.css'
 import '../styles/ad.css'
 import '../styles/Loader.css'
 import '../styles/profile.css'
+import '../styles/curso.css'
 import { SessionProvider } from 'next-auth/react'
 
 function MyApp({ Component, pageProps, session }) {  
