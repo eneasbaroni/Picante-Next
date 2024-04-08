@@ -31,6 +31,10 @@ const Curso = () => {
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src="/Images/curso/shablon2.svg" alt="shablon" />
                         </div>
+                        <div className="imgContainer">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/Images/curso/shablon2.svg" alt="shablon" />
+                        </div>
                         <div className="infoContainer ">
                             <p className="tLeft">
                                 <span>SHABLON / BASTIDOR / PLANTILLA</span><br/>
@@ -62,6 +66,10 @@ const Curso = () => {
 
                     <div className="hContainer">
                         <div className="imgContainer imgMobile">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/Images/curso/emulsionador2.svg" alt="emulsionador" />
+                        </div>
+                        <div className="imgContainer">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src="/Images/curso/emulsionador2.svg" alt="emulsionador" />
                         </div>
@@ -98,6 +106,10 @@ const Curso = () => {
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src="/Images/curso/tinta2.svg" alt="tinta" />
                         </div>
+                        <div className="imgContainer">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/Images/curso/tinta2.svg" alt="tinta" />
+                        </div>
                         <div className="infoContainer ">
                             <p className="tLeft">
                                 <span>TINTAS</span><br/>
@@ -129,6 +141,10 @@ const Curso = () => {
 
                     <div className="hContainer">
                         <div className="imgContainer imgMobile">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src="/Images/curso/bisagra2.svg" alt="tinta" />
+                        </div>
+                        <div className="imgContainer">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src="/Images/curso/bisagra2.svg" alt="tinta" />
                         </div>
