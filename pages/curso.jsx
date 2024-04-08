@@ -11,9 +11,9 @@ const Curso = () => {
 
             <div className="init">
                 <h2>HOLA :)</h2>
-                <div className="video">
-                   <p>AQUI VA EL VIDEO DE PICANTE STIKERSSSS</p>
-                </div>
+                <video autoPlay loop muted className="video">
+                <source src="videos/Picante Stickers.mp4" type="video/mp4"/> 
+            </video>
                 <p>Bienvenid@s, mi nombre es Eve y te invito a explorar y a divertirte, con esta hermosa técnica de impresión manual.<br/>
                     Con la Serigrafía podrás crear varias reproducciones de un mismo diseño.<br/>
                     Basándote en el estarcido (técnica primitiva) donde pigmentos/tintas  se aplican en ciertas zonas de una plantilla pre-diseñada.

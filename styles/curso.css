@@ -13,17 +13,23 @@
         }
     }
 
-    .video {
-        max-width: 800px;
-        height: 450px; /* cambiaar */
-        margin: 0 auto;
-        background-color: rgb(161, 123, 123);
-        display: flex;
-        justify-content: center;
-        align-items: center;   
-        
-        @media (max-width: 832px) {
-            margin: 0 1rem;
+    .video {        
+        padding: 2rem;
+        margin: 2rem auto;
+        display: block;
+        width: 70%;
+        height: auto;
+        background-color: var(--main-bg);
+        border: var(--main-border);
+        box-shadow: 10px 10px 0 0 var(--main-color);
+
+        @media (max-width: 768px) {
+            padding: 1rem;
+        }
+
+        @media (max-width: 576px) {
+            width: 90%;
+            padding: 0.5rem;
         }
         
     }
