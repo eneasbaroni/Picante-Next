@@ -12,14 +12,25 @@ const Curso = () => {
             <div className="init">
                 <h2>HOLA :)</h2>
                 <video autoPlay loop muted className="video">
-                <source src="videos/Picante Stickers.mp4" type="video/mp4"/> 
-            </video>
+                    <source src="videos/Picante Stickers.mp4" type="video/mp4"/> 
+                </video>
                 <p>Bienvenid@s, mi nombre es Eve y te invito a explorar y a divertirte, con esta hermosa técnica de impresión manual.<br/>
                     Con la Serigrafía podrás crear varias reproducciones de un mismo diseño.<br/>
                     Basándote en el estarcido (técnica primitiva) donde pigmentos/tintas  se aplican en ciertas zonas de una plantilla pre-diseñada.
                 </p>
             </div>
-            <div className="herramientas">
+
+            <div id="indice">
+                <h3>INDICE</h3>
+                <a href="#herramientas">HERRAMIENTAS</a>
+                <a href="#action">PASAR A LA ACCION</a>
+                <a href="#hans">MANOS A LA OBRA</a>
+                <a href="#crear">MOMENTO CREAR</a>
+                <a href="#iluminar">MOMENTO ILUMINAR</a>
+                <a href="#magico">MOMENTO MÁGICO</a>
+            </div>
+
+            <div id="herramientas">
                 <h3>HERRAMIENTAS</h3>
                 <h4>Kit básico para iniciar</h4>
 
@@ -27,12 +38,10 @@ const Curso = () => {
                 <div className="hGroupContainer">
 
                     <div className="hContainer">
-                        <div className="imgContainer imgMobile">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer imgMobile">                            
                             <img src="/Images/curso/shablon2.svg" alt="shablon" />
                         </div>
-                        <div className="imgContainer">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer">                            
                             <img src="/Images/curso/shablon2.svg" alt="shablon" />
                         </div>
                         <div className="infoContainer ">
@@ -47,8 +56,7 @@ const Curso = () => {
                     </div>
 
                     <div className="hContainer">
-                        <div className="imgContainer imgMobile">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer imgMobile">                            
                             <img src="/Images/curso/emul2.svg" alt="emulsion" />
                         </div>
                         <div className="infoContainer ">
@@ -58,19 +66,16 @@ const Curso = () => {
                                 Con la emulsión podemos crear la matriz o estarcido. La emulsión se endurece cuando se expone a una luz potente y solo se puede eliminar con productos especiales.
                             </p>
                         </div>
-                        <div className="imgContainer">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer">                            
                             <img src="/Images/curso/emul2.svg" alt="emulsion" />
                         </div>
                     </div>
 
                     <div className="hContainer">
-                        <div className="imgContainer imgMobile">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer imgMobile">                            
                             <img src="/Images/curso/emulsionador2.svg" alt="emulsionador" />
                         </div>
-                        <div className="imgContainer">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer">                            
                             <img src="/Images/curso/emulsionador2.svg" alt="emulsionador" />
                         </div>
                         <div className="infoContainer ">
@@ -83,8 +88,7 @@ const Curso = () => {
                     </div>
 
                     <div className="hContainer">
-                        <div className="imgContainer imgMobile">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer imgMobile">                            
                             <img src="/Images/curso/espatula2.svg" alt="espatula" />
                         </div>
                         <div className="infoContainer ">
@@ -95,19 +99,16 @@ const Curso = () => {
                                 Mientras más elementos tengas, podrás trabajar más comod@.
                             </p>
                         </div>
-                        <div className="imgContainer">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer">                            
                             <img src="/Images/curso/espatula2.svg" alt="espatula" />
                         </div>
                     </div>
 
                     <div className="hContainer ">
-                        <div className="imgContainer imgMobile">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer imgMobile">                            
                             <img src="/Images/curso/tinta2.svg" alt="tinta" />
                         </div>
-                        <div className="imgContainer">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer">                            
                             <img src="/Images/curso/tinta2.svg" alt="tinta" />
                         </div>
                         <div className="infoContainer ">
@@ -120,8 +121,7 @@ const Curso = () => {
                     </div>
 
                     <div className="hContainer">
-                        <div className="imgContainer imgMobile">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer imgMobile">                            
                             <img src="/Images/curso/manigueta2.svg" alt="espatula" />
                         </div>
                         <div className="infoContainer ">
@@ -133,19 +133,16 @@ const Curso = () => {
                                 *También se puede utilizar para colorar emulsión*
                             </p>
                         </div>
-                        <div className="imgContainer">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer">                            
                             <img src="/Images/curso/manigueta2.svg" alt="espatula" />
                         </div>
                     </div>
 
                     <div className="hContainer">
-                        <div className="imgContainer imgMobile">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer imgMobile">                            
                             <img src="/Images/curso/bisagra2.svg" alt="tinta" />
                         </div>
-                        <div className="imgContainer">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <div className="imgContainer">                            
                             <img src="/Images/curso/bisagra2.svg" alt="tinta" />
                         </div>
                         <div className="infoContainer ">
@@ -159,16 +156,17 @@ const Curso = () => {
                     </div>
                 </div>
 
+                <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
+
 
             </div>
 
-            <div className="action">
+            <div id="action">
                 <h3>PASAR A LA ACCIÓN</h3>
-                <h4>Aula invertida</h4>
+                <h4>Comienza la diversión</h4>
                 <p>Ahora, ya conoces algunos de los materiales básicos para poder comenzar a trabajar, pero falta algo MUY IMPORTANTE: <br/><span>EL DISEÑO</span></p>
                 
-                <div className="example">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                <div className="example">                    
                     <img src="/Images/curso/ejemplo.svg" alt="ejemplo" />
                     <p>Ejemplo, de <span>DISEÑO DIGITAL</span> que contiene lineas y tramas de punto para crear efecto de sombra y volumen. </p>
                 </div>
@@ -177,7 +175,7 @@ const Curso = () => {
                     Para la creación de los diseños en formato digital, es necesario tener en cuenta algunos detalles, ya que pasar una idea desde un formato virtual/digital a la realidad puede tener sus limitaciones a la hora de aplicarlo. A continuación, te dejo unos consejos para que puedas aplicar :) 
                 </p>
 
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                
                 <div className="consejos">
                     <p>Usar máxima calidad, mínomo 300 dpi</p>
                     <p>Usar Formatos AI, PDF o PNG</p>
@@ -185,17 +183,15 @@ const Curso = () => {
                     <p>Valor de línea: Superior a 1pt</p>
                     <p>Tipografías: superior a 8pt., convertidas a CURVAS</p>
                     <p>Enviar referencia de colores específicas</p>
-                    <p>Archivos separados por color a estampar</p>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <p>Archivos separados por color a estampar</p>                    
                     <img src="/Images/curso/logo.svg" alt="ejemplo" />
-
                 </div>
                 <p>Trabajar con el paquete de ADOBE (Photoshop, Illustrator), permite tener mayores posibilidades, te aconsejo que siempre trabajes en CMYK, para lograr una impresión 100% negra modificando los valores del color de tu diseño. A continuación, te dejo unos consejos para que puedas aplicar :)</p>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                
                 <img src="/Images/curso/palette.png" alt="paleta" className="paleta" />
 
                 <div className="digital">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    
                     <img src="/Images/curso/fibra2.svg" alt="fibra" />
                     <p>
                         <span>DISEÑO ANALOGICO/MANUAL</span><br/>
@@ -203,11 +199,122 @@ const Curso = () => {
                         Podés utilizar fibrones, estilógrafos, fibras.<br/>
                         <span>IMPORTANTE! </span><br/>
                         Tu dibujo, palabra, etc. deberá ser plasmado sobre papel vegetal o filmina.<br/>
-                        El cual deberá ser NEGRO (Los colores plenos deberán ser bien trabajados, y las líneas no podrán ser muy finas).
+                        El cual deberá ser NEGRO (Los colores plenos deberán ser bien trabajados, y las líneas no podrán ser muy finas).<br/>
+                        <span>DATO IMPORTANTE</span><br/>
+                        El color NEGRO bloquea la luz cuando se realiza la exposición/revelado, esto permite que donde se encuentre el color negro, cuando lavemos por primera vez la emulsión, se quite fácilmente. 
                     </p>
 
                 </div>
+
+                <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
             </div>
+
+            <div id="hans">
+                <h3>MANOS A LA OBRA</h3>
+                <h4>Ahora si te quiero ver</h4>
+                <p>Ahora, te toca ponerte creativ@, te invito a <span>CREAR UN DISEÑO</span> (Digital o Analógico). El día que asistas al taller, deberás traer tu diseño impreso o dibujado (Tendré diseños disponibles el día del taller, por si aún no tenés el tuyo).</p>
+                <h4>ATENCIÓN</h4>
+                <p>
+                    *El tamaño NO debe superar 10*10 cm.<br/>
+                    *Seguir los consejos para evitar fallas técnicas. 
+                </p>
+                
+                <img src="/Images/curso/squezee.svg" alt="squezee" className="cursoIll" />
+
+                <p>
+                    Para llegar a este momento ya pasamos por la etapa de lectura, interiorización con las herramientas que necesitamos y creación de un diseño.<br/>
+                    Ahora, toca la parte más divertida y desafiante.<br/>
+                    Para este oficio es necesario desarrollar varias cualidades/habilidades, la más importante es la Paciencia :)<br/>
+                    Debemos ser tolerantes con nosotr@s, y al “fracaso”, ya que es posible que al principio puedan suceder algunos imprevistos técnicos, o situaciones que aún son completamente desconocidas.<br/>
+                    Intentar, equivocarse, y seguir adelante. 
+                </p> 
+                
+                <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
+            </div>
+
+            <div id="crear">
+                <h3>MOMENTO DE CREAR :)</h3>
+                <h4>A mover las manos</h4>
+                <p>
+                    Conectar con nuestros sentidos, percibir texturas.<br/>
+                    En este apartado, te dejaré tips que van a servirte luego de realizar el curso. <br/>
+                    Para que recuerdes y refresques algunas cosas :)  lo demás lo veremos completamente el día al que asistas al taller.
+                </p>
+
+                <h4>Elementos necesarios:</h4>
+                <p>
+                    *Emulsión<br/>
+                    *Espátula/Cuchara<br/>
+                    *Emulsionador
+                </p>
+
+                <img src="/Images/curso/curso-01.png" alt="imagen del curso" className="cursoImg" />
+                <div className="curseGroup">
+                    <img src="/Images/curso/emul2.svg" alt="emulsion" />
+                    <p>CONSEJO: Mezclá la emulsión, sobre todo si hace mucho tiempo no la usas.</p>
+                </div>
+
+                <img src="/Images/curso/curso-02.png" alt="imagen del curso" className="cursoImg" />
+                <div className="curseGroup">
+                    <img src="/Images/curso/emulsionador2.svg" alt="emulsion" />
+                    <p>
+                        CONSEJO: Calculá la cantidad de material según el tamaño del shablon para evitar desperdicios.<br/>Recordá que también podés utilizar una manigueta para emulsionar.
+                    </p>
+                </div>
+
+                <img src="/Images/curso/curso-03.png" alt="imagen del curso" className="cursoImg" />
+                <p>
+                    Aplicá una capa fina de emulsión y secá.<br/>
+                    No es necesario secar con pistola de calor, podes utilizar secador de pelo, o dejar un ventilador frente al shablon emulsionado.
+                </p> 
+
+                <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>               
+            </div>
+
+            <div id="iluminar">
+                <h3>MOMENTO DE ILUMINAR :)</h3>
+                <h4>El tiempo es oro</h4>
+                <p>
+                    Recordá siempre que el positivo debe quedar fijo y debe recibir luz pareja e intensa sobre toda la superficie del  shablón. No olvides aplicar peso sobre el shablón (con libros, tintas, etc) para lograr un buen resultado..
+                </p>
+
+                <img src="/Images/curso/curso-04.png" alt="imagen del curso" className="cursoImg" />
+               
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/process.svg" alt="proceso" className="imgLarge"/>
+                    <p>El tiempo de exposición a la luz, dependerá del tipo de luz, la distancia y el tipo de shablón que escojas. En la mesa picante 1.30¨ </p>
+                </div>
+
+                <img src="/Images/curso/curso-05.png" alt="imagen del curso" className="cursoImg" />
+              
+                <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
+            </div>            
+
+            <div id="magico">
+                <h3>MOMENTO MÁGICO :)</h3>
+                <h4>Gracias pacha</h4>
+                <img src="/Images/curso/curso-06.png" alt="imagen del curso" className="cursoImg" />
+                <br/>
+                <br/>
+                <p>IMPORTANTE: Utilizar el menor recurso de agua posible para el proceso de revelado, en otras palabras... CUIDA EL AGUA</p>
+
+                <img src="/Images/curso/curso-07.png" alt="imagen del curso" className="cursoImg" />     
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/sponge.svg" alt="esponja" />
+                    <p>
+                        CONSEJO: De manera suave, con movimientos circulares, frotá una esponja sobre el shablón. <br/>
+                        Hacelo por sus 2 lados, esta acción afloja de manera más pareja la capa superficial de la matriz..
+                    </p>
+                </div>  
+
+                <img src="/Images/curso/curso-08.png" alt="imagen del curso" className="cursoImg" />     
+                <p>Dejá secando al sol tu matriz :)</p>
+              
+                <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
+            </div>
+
         </div>
 
     </Layout>
