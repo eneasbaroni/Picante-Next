@@ -218,10 +218,14 @@
         }
     }
 
-    #action, #hans, #crear, #iluminar, #magico {
+    #action, #hans, #crear, #iluminar, #magico, #tinta, #recuperar {
         margin: 2rem 2rem 0;
         border-top: 2px solid var(--main-color);
         padding-top: 5rem;
+
+        @media (max-width: 768px) {
+            margin: 2rem 1rem 0;
+        }
 
         h3 {           
             font-size: calc(1rem + 1.5vw);
@@ -262,6 +266,10 @@
                 margin: 0.5rem auto;
                 box-shadow: 3px 3px 0 0 var(--main-color);   
             }
+
+            @media (max-width: 768px) {
+                padding: 0.5rem;   
+            }
         }
 
         .curseGroup {
@@ -269,6 +277,10 @@
             flex-direction: row;
             max-width: 800px;
             margin: 2rem auto 0;
+
+            p {
+                text-align: left;
+            }
 
             img {
                 width: 30%;

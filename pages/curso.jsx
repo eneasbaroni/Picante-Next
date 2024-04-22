@@ -28,6 +28,8 @@ const Curso = () => {
                 <a href="#crear">MOMENTO CREAR</a>
                 <a href="#iluminar">MOMENTO ILUMINAR</a>
                 <a href="#magico">MOMENTO MÁGICO</a>
+                <a href="#tinta">MOMENTO TINTA</a>
+                <a href="#recuperar">RECUPERAR/LAVAR</a>
             </div>
 
             <div id="herramientas">
@@ -312,6 +314,167 @@ const Curso = () => {
                 <img src="/Images/curso/curso-08.png" alt="imagen del curso" className="cursoImg" />     
                 <p>Dejá secando al sol tu matriz :)</p>
               
+                <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
+            </div>
+
+            <div id="tinta">
+                <h3>MOMENTO TINTA :)</h3>
+                <h4>Posibilidades infinitas</h4>
+                <img src="/Images/curso/curso-09.png" alt="imagen del curso" className="cursoImg" />
+                <br/>
+                <br/>
+                <p>Una vez que tu matriz este completamente seca, es momento de conectar con la parte del proceso más esperada.</p>                    
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/cinta.svg" alt="cinta" />
+                    <p>
+                        CONSEJO: Cubrí los bordes del shablón de manera prolija para evitar que la tinta pase por lugares que no deseamos.
+                    </p>
+                </div>  
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/bisagra2.svg" alt="bisagra" />
+                    <p>
+                        Es momento de:<br/>
+                        AJUSTAR: El shablón a la bisagra.<br/>
+                        MEDIR: Que el soporte coincida con la matriz, tomar referencias.<br/>
+                        CONTROLAR: Todo lo anterior y también los materiales que deberás tener disponibles a la hora de imprimir.<br/>
+                        OBSERVAR: Sé minucios@ chequeá 2 veces todo.
+
+                    </p>
+                </div>  
+
+                <img src="/Images/curso/curso-10.png" alt="imagen del curso" className="cursoImg" /> 
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/pegamento.svg" alt="pegamento" />
+                    <p>
+                        Aquí te presento un producto auxiliar, ADHESIVO PARA MESA.<br/>
+                        Este producto es clave, ya que fija el soporte (Tela, papel, cartón, etc) a la mesa de trabajo.<br/>
+                        CONSEJO: Aplicá una capa fina, y dejá secar.
+                    </p>
+                </div>  
+
+                <h3>TINTAAAAAAA :)</h3>
+                <img src="/Images/curso/curso-11.png" alt="imagen del curso" className="cursoImg" /> 
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/tinta2.svg" alt="tinta" />
+                    <p>
+                        IMPORTANTE:  Vamos a trabajar con tintas de base acuosa, son más amigables con el medio ambiente y con nosotros también :)
+                    </p>
+                </div>  
+
+                <img src="/Images/curso/curso-12.png" alt="imagen del curso" className="cursoImg" />                 
+                <br/>
+                <br/>
+                <p>Aquí lo más importante, es sentir. Conectar con todos tus sentidos y experimentar sin “pensar tanto”. Cada copia que realices será única e irrepetible. Esa es la magia de la Serigrafia.</p>
+               
+                <img src="/Images/curso/curso-13.png" alt="imagen del curso" className="cursoImg" />               
+                <br/>
+                <br/>
+                <p>
+                    Cada copia, va requerir que cargues tinta y luego la descargues haciendo presión. <br/>
+                    CONSEJO: La manigueta, deberá aplicar la tinta a 45° (Generalmente), puede haber momentos en que varíe, esto dependerá del soporte y de la viscosidad de la tinta.<br/>
+                    Practicá sobre muchas superficies, permítete equivocarte, porque de los errores se aprende un montón :)
+                </p>
+
+                <img src="/Images/curso/curso-14.png" alt="imagen del curso" className="cursoImg" /> 
+                <br/>
+                <br/>
+                <p>ATENCIÓN: No te olvides de este truquito, que te va permitir colocar los soportes de manera correcta, para que la impresión/copia baje siempre en el mismo lugar. </p>
+
+                <img src="/Images/curso/curso-15.png" alt="imagen del curso" className="cursoImg" />               
+                <br/>
+                <br/>
+                <p>Cada vez que realizás una copia, tenés la posibilidad de corregir errores (si los hubiese, lo importante es estar conecad@ con el momento presente y disfrutar :) </p>
+
+                <img src="/Images/curso/curso-16.png" alt="imagen del curso" className="cursoImg" />               
+                <br/>
+                <br/>
+                <p>
+                    Al final la producción, es muy importante LAVAR.<br/>
+                    Quitar todo el excedente de tinta, mojar el shablón y suavemente quitarle los restos de material utilizado.<br/>
+                    MIENTAS MAS LIMPIO QUEDE, MEJOR SERÁ :)
+                </p>
+
+                <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
+            </div>
+
+            <div id="recuperar">
+                <h3>RECUPERAR/LAVAR</h3>
+                <h4>Re-utilizar tu shablón</h4>
+                <p>Este proceso te va permitir borrar el diseño que  utilizaste y luego de unos minutos poder tener el shablón limpio para trabajos futuros.</p>
+                <img src="/Images/curso/curso-17.png" alt="imagen del curso" className="cursoImg" />
+                <br/>
+                <br/>
+
+                <h4>KIT DE LIMPIEZA</h4>
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/desgrabador.svg" alt="desgrabador" />
+                    <p>
+                        DESGRABADOR & PASTA ALCALINA<br/>
+                        Estos productos son altamente corrosivos y peligrosos, es necesario que SIEMPRE utilices guantes especiales. 
+                    </p>
+                </div>
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/sponge.svg" alt="esponja" />
+                    <p>
+                        ESPONJA<br/>
+                        Te sugiero que puedas tener 1 esponja destinada 100% a este proceso. 
+                    </p>
+                </div>
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/estopa.svg" alt="estopa" />
+                    <p>
+                        ESTOPA<br/>
+                        Nuestra aliada para aplicar los productos auxiliares.
+                    </p>
+                </div>
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/diluyente.svg" alt="diluyente" />
+                    <p>
+                        C3/DILUYENTE <br/>
+                        Este tipo de producto, al fusionarse con la pasta alcalina genera un efecto químico potente, quita cualquier mancha, resto de material que haya quedado sobre el shablón. 
+                    </p>
+                </div>
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/gloves.svg" alt="guantes" />
+                    <p>
+                        GUANTES  (Acronitrilo DPS verde)  <br/>
+                        Recomiendo este guante ya que soportan los líquidos y pastas que utilizamos para este proceso. 
+                    </p>
+                </div>
+
+                <img src="/Images/curso/curso-18.png" alt="imagen del curso" className="cursoImg" />
+                <br/>
+                <br/>
+                <p>Mojá el shablón por sus 2 lados, y aplicá una capa fina de DESGRABADOR.</p>
+
+                <img src="/Images/curso/curso-19.png" alt="imagen del curso" className="cursoImg" />
+                <br/>
+                <br/>
+                <p>Así debería verse la emulsión aflojandosé, refregar por sus 2 lados de manera circular haciendo presión (no muy fuerte).  Enjuagá y colocá PASTA ALCALINA.</p>
+
+                <div className="curseGroup">
+                    <img src="/Images/curso/diluyente.svg" alt="diluyente" />
+                    <p>
+                        Es momento de utilizar C3, en una estopa coloca el producto hasta que la misma quede húmeda.<br/>
+                        *Frotá por los 2 lados del shablón eliminando cualquier excedente de la etapa anterior.<br/>
+                        *Enjuagá con agua a presión (puede ser con una manguera, o con hidrolavadora).<br/>
+                        *Por último, LAVA CON DETERGENTE : Los guantes, el shablón y las herramientas que utilizaste.
+                    </p>
+                </div>
+
+                <h3>LISTO!!<br/>VOLVER A EMPEZAR</h3>
+                <h4>¿Ya tenés tu nuevo diseño?</h4>
+
+
                 <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
             </div>
 
