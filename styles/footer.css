@@ -15,7 +15,7 @@ footer {
 } 
 
 .footerImgContainer .image{
-  background: url(/images/contact/footer.svg);
+  background: url(/Images/contact/footer.svg);
   filter: var(--main-filter);
   position: absolute;
   left: 0;

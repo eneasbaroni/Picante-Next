@@ -51,7 +51,7 @@ const Papel = ({obrasPapel}) => {
         <div className="imagesGalleryContainer">
           {obrasPapel.map((obra, i) => (            
             <div className="imageContainer" style={{transform: `rotate( ${ getRandom(-5, 10) }deg )`}} key={i} onClick={handleClick}>
-              <Image src={`/images/papel/${obra.src}`} placeholder='blur' blurDataURL={`/images/papel/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600} alt={obra.title} />              
+              <Image src={`/Images/papel/${obra.src}`} placeholder='blur' blurDataURL={`/Images/papel/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600} alt={obra.title} />              
             </div>
           ))}
         </div>
@@ -59,15 +59,15 @@ const Papel = ({obrasPapel}) => {
         {imgGrande &&
           <div className="imgGrandeContainer" style={{opacity: visible}} onClick={offImgGrande}>
             <div className="imgGrande">
-              <Image  layout="fill" objectFit="contain" src={`/images/papel/${imgGrandeSrc}`} alt="imgGrande"/>
+              <Image  layout="fill" objectFit="contain" src={`/Images/papel/${imgGrandeSrc}`} alt="imgGrande"/>
             </div>
           </div> 
         }
 
         <button onClick={() => router.back()}>
-          <Image src='/images/arrow.svg' objectFit="contain" layout="fill" alt="Arrow" ></Image>
-          <Image src='/images/arrow.svg' objectFit="contain" layout="fill" alt="Arrow" className="arrow2" ></Image>
-          <Image src='/images/arrow.svg' objectFit="contain" layout="fill" alt="Arrow" className="arrow3" ></Image>
+          <Image src='/Images/arrow.svg' objectFit="contain" layout="fill" alt="Arrow" ></Image>
+          <Image src='/Images/arrow.svg' objectFit="contain" layout="fill" alt="Arrow" className="arrow2" ></Image>
+          <Image src='/Images/arrow.svg' objectFit="contain" layout="fill" alt="Arrow" className="arrow3" ></Image>
           BACK TO HOME
         </button>
       </main>

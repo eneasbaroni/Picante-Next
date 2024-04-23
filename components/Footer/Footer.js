@@ -13,7 +13,7 @@ const Footer = () => {
         
           <div className='ubication'>
           <a  href="https://g.page/picante-serigrafia?share" target="_blank" rel="noreferrer" >
-          <Image src='/images/contact/mapa.png' layout='fill' objectFit='cover' alt='mapa' />
+          <Image src='/Images/contact/mapa.png' layout='fill' objectFit='cover' alt='mapa' />
           </a>
           </div>
          
@@ -29,16 +29,16 @@ const Footer = () => {
         </div>   
 
         <div className='infoIcons'>          
-          <div className="iconContainer"><Link href="https://wa.me/+5493516558094" className="iconsContainer"><Image src='/images/whatsapp_icon.svg'  alt='whatsapp' layout="fill"/></Link></div>
-          <div className="iconContainer"><Link href="https://www.instagram.com/picante.serigrafia/" className="iconsContainer"><Image src='/images/instagram_icon2.svg'  alt='instagram' layout="fill"/></Link></div>
-          <div className="iconContainer"><Link href="https://www.facebook.com/picante.serigrafia/" className="iconsContainer"><Image src='/images/facebook_icon.svg'  alt='facebook' layout="fill"/></Link></div>
-          <div className="iconContainer"><Link href="mailto:picante.cba.arg@gmail.com" className="iconsContainer"><Image src='/images/mailIcon.svg'  alt='mail' layout="fill"/></Link>          </div>
+          <div className="iconContainer"><Link href="https://wa.me/+5493516558094" className="iconsContainer"><Image src='/Images/whatsapp_icon.svg'  alt='whatsapp' layout="fill"/></Link></div>
+          <div className="iconContainer"><Link href="https://www.instagram.com/picante.serigrafia/" className="iconsContainer"><Image src='/Images/instagram_icon2.svg'  alt='instagram' layout="fill"/></Link></div>
+          <div className="iconContainer"><Link href="https://www.facebook.com/picante.serigrafia/" className="iconsContainer"><Image src='/Images/facebook_icon.svg'  alt='facebook' layout="fill"/></Link></div>
+          <div className="iconContainer"><Link href="mailto:picante.cba.arg@gmail.com" className="iconsContainer"><Image src='/Images/mailIcon.svg'  alt='mail' layout="fill"/></Link>          </div>
         </div>        
 
       </div>    
 
       <div className="footerImgContainer">
-        {/* <Image src='/images/contact/footer.svg' width={1920} height={614} objectFit='cover' alt='equipo' /> */}
+        {/* <Image src='/Images/contact/footer.svg' width={1920} height={614} objectFit='cover' alt='equipo' /> */}
         <div className="image"></div>
       </div>
 

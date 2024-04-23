@@ -12,7 +12,7 @@ export default NextAuth({
     theme: {
         colorScheme: "auto", // "auto" | "dark" | "light"
         brandColor: "b33f4c", // Hex color code
-        logo: "/images/Logo_picante.png", // Absolute URL to image
+        logo: "/Images/Logo_picante.png", // Absolute URL to image
         buttonText: "b33f4c" // Hex color code
     },
 

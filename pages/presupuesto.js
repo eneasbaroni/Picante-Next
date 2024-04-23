@@ -112,17 +112,17 @@ const Presupuesto = () => {
         <h1>FORMULARIO DE PRESUPUESTO</h1>       
         <div className='formularioP'>
           <div className="formImgContainer">
-            <Image src='/images/presupuesto/presupuesto.png' layout='fill' objectFit='contain' alt='picante serigrafia' className="prespImg" onLoad={() => setLoading(false)}></Image>          
+            <Image src='/Images/presupuesto/presupuesto.png' layout='fill' objectFit='contain' alt='picante serigrafia' className="prespImg" onLoad={() => setLoading(false)}></Image>          
             
             {loading !== true &&
               <>
                 <a target="_blank" href="https://wa.me/+5493415442366?text=Hola.%20Buen%20día.%20Necesito%20digitalizar%20mi%20diseño." rel="noopener noreferrer">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src='/images/presupuesto/btn-01.svg' alt='picante serigrafia' className="btn-01"></img>          
+                  <img src='/Images/presupuesto/btn-01.svg' alt='picante serigrafia' className="btn-01"></img>          
                 </a>        
-                <a target="_blank" href='./images/presupuesto/infografia.png' rel="noopener noreferrer">
+                <a target="_blank" href='./Images/presupuesto/infografia.png' rel="noopener noreferrer">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src='/images/presupuesto/btn-02.svg'alt='picante serigrafia' className="btn-02"></img>      
+                  <img src='/Images/presupuesto/btn-02.svg'alt='picante serigrafia' className="btn-02"></img>      
                 </a> 
               </>
             }  

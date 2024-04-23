@@ -41,10 +41,10 @@ const Curso = () => {
 
                     <div className="hContainer">
                         <div className="imgContainer imgMobile">                            
-                            <img src="/images/curso/shablon2.svg" alt="shablon" />
+                            <img src="/Images/curso/shablon2.svg" alt="shablon" />
                         </div>
                         <div className="imgContainer">                            
-                            <img src="/images/curso/shablon2.svg" alt="shablon" />
+                            <img src="/Images/curso/shablon2.svg" alt="shablon" />
                         </div>
                         <div className="infoContainer ">
                             <p className="tLeft">
@@ -59,7 +59,7 @@ const Curso = () => {
 
                     <div className="hContainer">
                         <div className="imgContainer imgMobile">                            
-                            <img src="/images/curso/emul2.svg" alt="emulsion" />
+                            <img src="/Images/curso/emul2.svg" alt="emulsion" />
                         </div>
                         <div className="infoContainer ">
                             <p className="tRight">
@@ -69,16 +69,16 @@ const Curso = () => {
                             </p>
                         </div>
                         <div className="imgContainer">                            
-                            <img src="/images/curso/emul2.svg" alt="emulsion" />
+                            <img src="/Images/curso/emul2.svg" alt="emulsion" />
                         </div>
                     </div>
 
                     <div className="hContainer">
                         <div className="imgContainer imgMobile">                            
-                            <img src="/images/curso/emulsionador2.svg" alt="emulsionador" />
+                            <img src="/Images/curso/emulsionador2.svg" alt="emulsionador" />
                         </div>
                         <div className="imgContainer">                            
-                            <img src="/images/curso/emulsionador2.svg" alt="emulsionador" />
+                            <img src="/Images/curso/emulsionador2.svg" alt="emulsionador" />
                         </div>
                         <div className="infoContainer ">
                             <p className="tLeft">
@@ -91,7 +91,7 @@ const Curso = () => {
 
                     <div className="hContainer">
                         <div className="imgContainer imgMobile">                            
-                            <img src="/images/curso/espatula2.svg" alt="espatula" />
+                            <img src="/Images/curso/espatula2.svg" alt="espatula" />
                         </div>
                         <div className="infoContainer ">
                             <p className="tRight">
@@ -102,16 +102,16 @@ const Curso = () => {
                             </p>
                         </div>
                         <div className="imgContainer">                            
-                            <img src="/images/curso/espatula2.svg" alt="espatula" />
+                            <img src="/Images/curso/espatula2.svg" alt="espatula" />
                         </div>
                     </div>
 
                     <div className="hContainer ">
                         <div className="imgContainer imgMobile">                            
-                            <img src="/images/curso/tinta2.svg" alt="tinta" />
+                            <img src="/Images/curso/tinta2.svg" alt="tinta" />
                         </div>
                         <div className="imgContainer">                            
-                            <img src="/images/curso/tinta2.svg" alt="tinta" />
+                            <img src="/Images/curso/tinta2.svg" alt="tinta" />
                         </div>
                         <div className="infoContainer ">
                             <p className="tLeft">
@@ -124,7 +124,7 @@ const Curso = () => {
 
                     <div className="hContainer">
                         <div className="imgContainer imgMobile">                            
-                            <img src="/images/curso/manigueta2.svg" alt="espatula" />
+                            <img src="/Images/curso/manigueta2.svg" alt="espatula" />
                         </div>
                         <div className="infoContainer ">
                             <p className="tRight">
@@ -136,16 +136,16 @@ const Curso = () => {
                             </p>
                         </div>
                         <div className="imgContainer">                            
-                            <img src="/images/curso/manigueta2.svg" alt="espatula" />
+                            <img src="/Images/curso/manigueta2.svg" alt="espatula" />
                         </div>
                     </div>
 
                     <div className="hContainer">
                         <div className="imgContainer imgMobile">                            
-                            <img src="/images/curso/bisagra2.svg" alt="tinta" />
+                            <img src="/Images/curso/bisagra2.svg" alt="tinta" />
                         </div>
                         <div className="imgContainer">                            
-                            <img src="/images/curso/bisagra2.svg" alt="tinta" />
+                            <img src="/Images/curso/bisagra2.svg" alt="tinta" />
                         </div>
                         <div className="infoContainer ">
                             <p className="tLeft">
@@ -169,7 +169,7 @@ const Curso = () => {
                 <p>Ahora, ya conoces algunos de los materiales básicos para poder comenzar a trabajar, pero falta algo MUY IMPORTANTE: <br/><span>EL DISEÑO</span></p>
                 
                 <div className="example">                    
-                    <img src="/images/curso/ejemplo.svg" alt="ejemplo" />
+                    <img src="/Images/curso/ejemplo.svg" alt="ejemplo" />
                     <p>Ejemplo, de <span>DISEÑO DIGITAL</span> que contiene lineas y tramas de punto para crear efecto de sombra y volumen. </p>
                 </div>
 
@@ -186,15 +186,15 @@ const Curso = () => {
                     <p>Tipografías: superior a 8pt., convertidas a CURVAS</p>
                     <p>Enviar referencia de colores específicas</p>
                     <p>Archivos separados por color a estampar</p>                    
-                    <img src="/images/curso/logo.svg" alt="ejemplo" />
+                    <img src="/Images/curso/logo.svg" alt="ejemplo" />
                 </div>
                 <p>Trabajar con el paquete de ADOBE (Photoshop, Illustrator), permite tener mayores posibilidades, te aconsejo que siempre trabajes en CMYK, para lograr una impresión 100% negra modificando los valores del color de tu diseño. A continuación, te dejo unos consejos para que puedas aplicar :)</p>
                 
-                <img src="/images/curso/palette.png" alt="paleta" className="paleta" />
+                <img src="/Images/curso/palette.png" alt="paleta" className="paleta" />
 
                 <div className="digital">
                     
-                    <img src="/images/curso/fibra2.svg" alt="fibra" />
+                    <img src="/Images/curso/fibra2.svg" alt="fibra" />
                     <p>
                         <span>DISEÑO ANALOGICO/MANUAL</span><br/>
                         Esta es una opción más experimental, creativa. <br/>
@@ -221,7 +221,7 @@ const Curso = () => {
                     *Seguir los consejos para evitar fallas técnicas. 
                 </p>
                 
-                <img src="/images/curso/squezee.svg" alt="squezee" className="cursoIll" />
+                <img src="/Images/curso/squezee.svg" alt="squezee" className="cursoIll" />
 
                 <p>
                     Para llegar a este momento ya pasamos por la etapa de lectura, interiorización con las herramientas que necesitamos y creación de un diseño.<br/>
@@ -250,21 +250,21 @@ const Curso = () => {
                     *Emulsionador
                 </p>
 
-                <img src="/images/curso/curso-01.png" alt="imagen del curso" className="cursoImg" />
+                <img src="/Images/curso/curso-01.png" alt="imagen del curso" className="cursoImg" />
                 <div className="curseGroup">
-                    <img src="/images/curso/emul2.svg" alt="emulsion" />
+                    <img src="/Images/curso/emul2.svg" alt="emulsion" />
                     <p>CONSEJO: Mezclá la emulsión, sobre todo si hace mucho tiempo no la usas.</p>
                 </div>
 
-                <img src="/images/curso/curso-02.png" alt="imagen del curso" className="cursoImg" />
+                <img src="/Images/curso/curso-02.png" alt="imagen del curso" className="cursoImg" />
                 <div className="curseGroup">
-                    <img src="/images/curso/emulsionador2.svg" alt="emulsion" />
+                    <img src="/Images/curso/emulsionador2.svg" alt="emulsion" />
                     <p>
                         CONSEJO: Calculá la cantidad de material según el tamaño del shablon para evitar desperdicios.<br/>Recordá que también podés utilizar una manigueta para emulsionar.
                     </p>
                 </div>
 
-                <img src="/images/curso/curso-03.png" alt="imagen del curso" className="cursoImg" />
+                <img src="/Images/curso/curso-03.png" alt="imagen del curso" className="cursoImg" />
                 <p>
                     Aplicá una capa fina de emulsión y secá.<br/>
                     No es necesario secar con pistola de calor, podes utilizar secador de pelo, o dejar un ventilador frente al shablon emulsionado.
@@ -280,15 +280,15 @@ const Curso = () => {
                     Recordá siempre que el positivo debe quedar fijo y debe recibir luz pareja e intensa sobre toda la superficie del  shablón. No olvides aplicar peso sobre el shablón (con libros, tintas, etc) para lograr un buen resultado..
                 </p>
 
-                <img src="/images/curso/curso-04.png" alt="imagen del curso" className="cursoImg" />
+                <img src="/Images/curso/curso-04.png" alt="imagen del curso" className="cursoImg" />
                
 
                 <div className="curseGroup">
-                    <img src="/images/curso/process.svg" alt="proceso" className="imgLarge"/>
+                    <img src="/Images/curso/process.svg" alt="proceso" className="imgLarge"/>
                     <p>El tiempo de exposición a la luz, dependerá del tipo de luz, la distancia y el tipo de shablón que escojas. En la mesa picante 1.30¨ </p>
                 </div>
 
-                <img src="/images/curso/curso-05.png" alt="imagen del curso" className="cursoImg" />
+                <img src="/Images/curso/curso-05.png" alt="imagen del curso" className="cursoImg" />
               
                 <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
             </div>            
@@ -296,22 +296,22 @@ const Curso = () => {
             <div id="magico">
                 <h3>MOMENTO MÁGICO :)</h3>
                 <h4>Gracias pacha</h4>
-                <img src="/images/curso/curso-06.png" alt="imagen del curso" className="cursoImg" />
+                <img src="/Images/curso/curso-06.png" alt="imagen del curso" className="cursoImg" />
                 <br/>
                 <br/>
                 <p>IMPORTANTE: Utilizar el menor recurso de agua posible para el proceso de revelado, en otras palabras... CUIDA EL AGUA</p>
 
-                <img src="/images/curso/curso-07.png" alt="imagen del curso" className="cursoImg" />     
+                <img src="/Images/curso/curso-07.png" alt="imagen del curso" className="cursoImg" />     
 
                 <div className="curseGroup">
-                    <img src="/images/curso/sponge.svg" alt="esponja" />
+                    <img src="/Images/curso/sponge.svg" alt="esponja" />
                     <p>
                         CONSEJO: De manera suave, con movimientos circulares, frotá una esponja sobre el shablón. <br/>
                         Hacelo por sus 2 lados, esta acción afloja de manera más pareja la capa superficial de la matriz..
                     </p>
                 </div>  
 
-                <img src="/images/curso/curso-08.png" alt="imagen del curso" className="cursoImg" />     
+                <img src="/Images/curso/curso-08.png" alt="imagen del curso" className="cursoImg" />     
                 <p>Dejá secando al sol tu matriz :)</p>
               
                 <button className="indiceBtn"><a href="#indice" >Volver al índice</a></button>
@@ -320,20 +320,20 @@ const Curso = () => {
             <div id="tinta">
                 <h3>MOMENTO TINTA :)</h3>
                 <h4>Posibilidades infinitas</h4>
-                <img src="/images/curso/curso-09.png" alt="imagen del curso" className="cursoImg" />
+                <img src="/Images/curso/curso-09.png" alt="imagen del curso" className="cursoImg" />
                 <br/>
                 <br/>
                 <p>Una vez que tu matriz este completamente seca, es momento de conectar con la parte del proceso más esperada.</p>                    
 
                 <div className="curseGroup">
-                    <img src="/images/curso/cinta.svg" alt="cinta" />
+                    <img src="/Images/curso/cinta.svg" alt="cinta" />
                     <p>
                         CONSEJO: Cubrí los bordes del shablón de manera prolija para evitar que la tinta pase por lugares que no deseamos.
                     </p>
                 </div>  
 
                 <div className="curseGroup">
-                    <img src="/images/curso/bisagra2.svg" alt="bisagra" />
+                    <img src="/Images/curso/bisagra2.svg" alt="bisagra" />
                     <p>
                         Es momento de:<br/>
                         AJUSTAR: El shablón a la bisagra.<br/>
@@ -344,10 +344,10 @@ const Curso = () => {
                     </p>
                 </div>  
 
-                <img src="/images/curso/curso-10.png" alt="imagen del curso" className="cursoImg" /> 
+                <img src="/Images/curso/curso-10.png" alt="imagen del curso" className="cursoImg" /> 
 
                 <div className="curseGroup">
-                    <img src="/images/curso/pegamento.svg" alt="pegamento" />
+                    <img src="/Images/curso/pegamento.svg" alt="pegamento" />
                     <p>
                         Aquí te presento un producto auxiliar, ADHESIVO PARA MESA.<br/>
                         Este producto es clave, ya que fija el soporte (Tela, papel, cartón, etc) a la mesa de trabajo.<br/>
@@ -356,21 +356,21 @@ const Curso = () => {
                 </div>  
 
                 <h3>TINTAAAAAAA :)</h3>
-                <img src="/images/curso/curso-11.png" alt="imagen del curso" className="cursoImg" /> 
+                <img src="/Images/curso/curso-11.png" alt="imagen del curso" className="cursoImg" /> 
 
                 <div className="curseGroup">
-                    <img src="/images/curso/tinta2.svg" alt="tinta" />
+                    <img src="/Images/curso/tinta2.svg" alt="tinta" />
                     <p>
                         IMPORTANTE:  Vamos a trabajar con tintas de base acuosa, son más amigables con el medio ambiente y con nosotros también :)
                     </p>
                 </div>  
 
-                <img src="/images/curso/curso-12.png" alt="imagen del curso" className="cursoImg" />                 
+                <img src="/Images/curso/curso-12.png" alt="imagen del curso" className="cursoImg" />                 
                 <br/>
                 <br/>
                 <p>Aquí lo más importante, es sentir. Conectar con todos tus sentidos y experimentar sin “pensar tanto”. Cada copia que realices será única e irrepetible. Esa es la magia de la Serigrafia.</p>
                
-                <img src="/images/curso/curso-13.png" alt="imagen del curso" className="cursoImg" />               
+                <img src="/Images/curso/curso-13.png" alt="imagen del curso" className="cursoImg" />               
                 <br/>
                 <br/>
                 <p>
@@ -379,17 +379,17 @@ const Curso = () => {
                     Practicá sobre muchas superficies, permítete equivocarte, porque de los errores se aprende un montón :)
                 </p>
 
-                <img src="/images/curso/curso-14.png" alt="imagen del curso" className="cursoImg" /> 
+                <img src="/Images/curso/curso-14.png" alt="imagen del curso" className="cursoImg" /> 
                 <br/>
                 <br/>
                 <p>ATENCIÓN: No te olvides de este truquito, que te va permitir colocar los soportes de manera correcta, para que la impresión/copia baje siempre en el mismo lugar. </p>
 
-                <img src="/images/curso/curso-15.png" alt="imagen del curso" className="cursoImg" />               
+                <img src="/Images/curso/curso-15.png" alt="imagen del curso" className="cursoImg" />               
                 <br/>
                 <br/>
                 <p>Cada vez que realizás una copia, tenés la posibilidad de corregir errores (si los hubiese, lo importante es estar conecad@ con el momento presente y disfrutar :) </p>
 
-                <img src="/images/curso/curso-16.png" alt="imagen del curso" className="cursoImg" />               
+                <img src="/Images/curso/curso-16.png" alt="imagen del curso" className="cursoImg" />               
                 <br/>
                 <br/>
                 <p>
@@ -405,14 +405,14 @@ const Curso = () => {
                 <h3>RECUPERAR/LAVAR</h3>
                 <h4>Re-utilizar tu shablón</h4>
                 <p>Este proceso te va permitir borrar el diseño que  utilizaste y luego de unos minutos poder tener el shablón limpio para trabajos futuros.</p>
-                <img src="/images/curso/curso-17.png" alt="imagen del curso" className="cursoImg" />
+                <img src="/Images/curso/curso-17.png" alt="imagen del curso" className="cursoImg" />
                 <br/>
                 <br/>
 
                 <h4>KIT DE LIMPIEZA</h4>
 
                 <div className="curseGroup">
-                    <img src="/images/curso/desgrabador.svg" alt="desgrabador" />
+                    <img src="/Images/curso/desgrabador.svg" alt="desgrabador" />
                     <p>
                         DESGRABADOR & PASTA ALCALINA<br/>
                         Estos productos son altamente corrosivos y peligrosos, es necesario que SIEMPRE utilices guantes especiales. 
@@ -420,7 +420,7 @@ const Curso = () => {
                 </div>
 
                 <div className="curseGroup">
-                    <img src="/images/curso/sponge.svg" alt="esponja" />
+                    <img src="/Images/curso/sponge.svg" alt="esponja" />
                     <p>
                         ESPONJA<br/>
                         Te sugiero que puedas tener 1 esponja destinada 100% a este proceso. 
@@ -428,7 +428,7 @@ const Curso = () => {
                 </div>
 
                 <div className="curseGroup">
-                    <img src="/images/curso/estopa.svg" alt="estopa" />
+                    <img src="/Images/curso/estopa.svg" alt="estopa" />
                     <p>
                         ESTOPA<br/>
                         Nuestra aliada para aplicar los productos auxiliares.
@@ -436,7 +436,7 @@ const Curso = () => {
                 </div>
 
                 <div className="curseGroup">
-                    <img src="/images/curso/diluyente.svg" alt="diluyente" />
+                    <img src="/Images/curso/diluyente.svg" alt="diluyente" />
                     <p>
                         C3/DILUYENTE <br/>
                         Este tipo de producto, al fusionarse con la pasta alcalina genera un efecto químico potente, quita cualquier mancha, resto de material que haya quedado sobre el shablón. 
@@ -444,25 +444,25 @@ const Curso = () => {
                 </div>
 
                 <div className="curseGroup">
-                    <img src="/images/curso/gloves.svg" alt="guantes" />
+                    <img src="/Images/curso/gloves.svg" alt="guantes" />
                     <p>
                         GUANTES  (Acronitrilo DPS verde)  <br/>
                         Recomiendo este guante ya que soportan los líquidos y pastas que utilizamos para este proceso. 
                     </p>
                 </div>
 
-                <img src="/images/curso/curso-18.png" alt="imagen del curso" className="cursoImg" />
+                <img src="/Images/curso/curso-18.png" alt="imagen del curso" className="cursoImg" />
                 <br/>
                 <br/>
                 <p>Mojá el shablón por sus 2 lados, y aplicá una capa fina de DESGRABADOR.</p>
 
-                <img src="/images/curso/curso-19.png" alt="imagen del curso" className="cursoImg" />
+                <img src="/Images/curso/curso-19.png" alt="imagen del curso" className="cursoImg" />
                 <br/>
                 <br/>
                 <p>Así debería verse la emulsión aflojandosé, refregar por sus 2 lados de manera circular haciendo presión (no muy fuerte).  Enjuagá y colocá PASTA ALCALINA.</p>
 
                 <div className="curseGroup">
-                    <img src="/images/curso/diluyente.svg" alt="diluyente" />
+                    <img src="/Images/curso/diluyente.svg" alt="diluyente" />
                     <p>
                         Es momento de utilizar C3, en una estopa coloca el producto hasta que la misma quede húmeda.<br/>
                         *Frotá por los 2 lados del shablón eliminando cualquier excedente de la etapa anterior.<br/>

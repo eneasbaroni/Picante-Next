@@ -17,7 +17,7 @@ const nosotros = () => {
           </p>
         </div>
         <div className='equipoImg'>
-          <Image src='/images/Eve_02.jpg' layout='fill' placeholder='blur' blurDataURL='/images/Eve_02.jpg' objectFit='cover' alt='equipo' />
+          <Image src='/Images/Eve_02.jpg' layout='fill' placeholder='blur' blurDataURL='/Images/Eve_02.jpg' objectFit='cover' alt='equipo' />
         </div>
 
       </main>
