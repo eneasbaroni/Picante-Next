@@ -1,5 +1,4 @@
 //dinamic
-export const dynamic = 'force-dynamic'
 import Layout from "../components/Layout/Layout";
 import Inicio from "../components/Inicio/Inicio";
 
