@@ -55,7 +55,7 @@
         h3 {           
             font-size: calc(1rem + 1.5vw);
             font-weight: 400;
-            color: var(--second-color);   
+            color: var(--second-color); 
         }
 
         a {
@@ -117,8 +117,12 @@
         padding-top: 5rem;
 
         h3 {           
-            font-size: calc(1rem + 1.5vw);
+            font-size: calc(1rem + 2vw);
             font-weight: 400;
+
+            @media (max-width: 768px) {
+                font-size: calc(1.5rem + 2vw);
+            }
         }
 
         h4 {
@@ -228,8 +232,12 @@
         }
 
         h3 {           
-            font-size: calc(1rem + 1.5vw);
+            font-size: calc(1rem + 2vw);
             font-weight: 400;
+
+            @media (max-width: 768px) {
+                font-size: calc(1.5rem + 2vw);
+            }
         }
 
         h4 {
@@ -320,21 +328,23 @@
 
         .consejos {
             max-width: 660px;
-            margin: 0 auto;
+            margin: 1rem auto 0;
 
             p {
                 
                 margin-left: calc(1rem + 0.5vw);
                 position: relative;
                 display: inline-block;
-                width: auto;
+                width: 100%;
+                text-align: left;
+                line-height: 3.5rem;
 
                 &::before {
                     content: '';
                     display: block;
                     position: absolute;
                     left: -2rem;
-                    top: -0.5rem;
+                    top: 0rem;
                     width: calc(1rem + 0.5vw);
                     height: calc(1rem + 0.5vw);
                     background: url('../public/Images/curso/ok.svg');
@@ -344,10 +354,13 @@
                 }
 
                 @media (max-width: 576px) {
+
+                    line-height: 2rem;
+
                     &::before{
                         display: inline;
-                        top: -0.8rem;
-                        left: -1.2rem;
+                        top: -0.5rem;
+                        left: -1.2rem;                        
                     }
                 }
             }

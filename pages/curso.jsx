@@ -65,7 +65,7 @@ const Curso = () => {
                             <p className="tRight">
                                 <span>EMULSÍON</span><br/>
                                 Es una sustancia química fotosensible que se aplica al Shablon con una CUBETA/EMULSIONADOR (No es necesarias, podés utilizar otras herramientas).<br/>
-                                Con la emulsión podemos crear la matriz o estarcido. La emulsión se endurece cuando se expone a una luz potente y solo se puede eliminar con productos especiales.
+                                Con la emulsión podemos crear la matriz. La emulsión se endurece cuando se expone a una luz potente y solo se puede eliminar con productos especiales.
                             </p>
                         </div>
                         <div className="imgContainer">                            
