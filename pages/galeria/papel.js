@@ -51,7 +51,7 @@ const Papel = ({obrasPapel}) => {
         <div className="imagesGalleryContainer">
           {obrasPapel.map((obra, i) => (            
             <div className="imageContainer" style={{transform: `rotate( ${ getRandom(-5, 10) }deg )`}} key={i} onClick={handleClick}>
-              <Image src={`/Images/papel/${obra.src}`} placeholder='blur' blurDataURL={`/Images/papel/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600} alt={obra.title} />              
+              <Image src={`/Images/papel/${obra.src}`} objectFit='cover' name={obra.src} height={800} width={600} alt={obra.title} />              
             </div>
           ))}
         </div>

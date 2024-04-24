@@ -1,3 +1,13 @@
+@keyframes shimmer_2s_infinite {
+  0% {
+      background-position: 100%;
+  }
+
+  100% {
+      background-position: -100%;
+  }
+}
+
 .galeriaContainer {
   padding: 0 5rem;
   display: grid;
@@ -63,6 +73,7 @@
 
 .imageContainer {
   transform: rotate( 0.05deg );
+
 }
 
 .imageContainer img {
@@ -73,7 +84,11 @@
   -webkit-filter: grayscale(90%) contrast(200%);
   filter: grayscale(90%) contrast(200%);
   opacity: 0.8;
-  transition: all .5s ease-in-out;;    
+  transition: all .5s ease-in-out;
+
+  animation: shimmer_2s_infinite 4s linear infinite;
+  background: linear-gradient(to right, transparent,rgba(255, 255, 255, 0.6) 50%,transparent);
+  background-size: 200% auto;
 }
 
 .imageContainer img:hover {    

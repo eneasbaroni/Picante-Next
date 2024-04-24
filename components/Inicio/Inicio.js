@@ -46,11 +46,11 @@ const Inicio = () => {
           </p>
         </div>
 
-        <div className="imgA"><Image src='/Images/home/home01.jpg' objectFit="cover" height={400} width={600} placeholder='blur' blurDataURL='/Images/home/home01.jpg'/* layout="fill" */ alt="Home Banner"></Image></div>
-        <div className="imgB"><Image src='/Images/home/home02.jpg' objectFit="cover"  height={400} width={600} placeholder='blur' blurDataURL='/Images/home/home02.jpg'  /* layout="fill" */ alt="Home Banner"></Image></div>
-        <div className="imgA imgC"><Image src='/Images/home/home03.jpg' objectFit="cover"  height={400} width={600} placeholder='blur' blurDataURL='/Images/home/home03.jpg' /* layout="fill" */ alt="Home Banner"></Image></div>        
-        <div className="imgA imgMiddleA"><Image src='/Images/home/home05.jpg' objectFit="cover" height={400} width={600} placeholder='blur' blurDataURL='/Images/home/home05.jpg' /* layout="fill" */ alt="Home Banner"></Image></div>
-        <div className="imgB imgMiddleB"><Image src='/Images/home/home04.jpg' objectFit="cover" height={400} width={600} placeholder='blur' blurDataURL='/Images/home/home04.jpg'/* layout="fill" */ alt="Home Banner"></Image></div>
+        <div className="imgA"><Image src='/Images/home/home01.jpg' objectFit="cover" height={400} width={600}  alt="Home Banner"></Image></div>
+        <div className="imgB"><Image src='/Images/home/home02.jpg' objectFit="cover"  height={400} width={600} alt="Home Banner"></Image></div>
+        <div className="imgA imgC"><Image src='/Images/home/home03.jpg' objectFit="cover"  height={400} width={600} alt="Home Banner"></Image></div>        
+        <div className="imgA imgMiddleA"><Image src='/Images/home/home05.jpg' objectFit="cover" height={400} width={600} alt="Home Banner"></Image></div>
+        <div className="imgB imgMiddleB"><Image src='/Images/home/home04.jpg' objectFit="cover" height={400} width={600}  alt="Home Banner"></Image></div>
       </div>      
       
       <Galerias/> 

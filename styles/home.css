@@ -1,3 +1,14 @@
+@keyframes shimmer_2s_infinite {
+  0% {
+      background-position: 100%;
+  }
+
+  100% {
+      background-position: -100%;
+  }
+}
+
+
 .inicioContainer {
   padding: 0 5rem;
   display: grid;
@@ -95,6 +106,12 @@
   border: var(--main-border);
   border-radius: 10px;
   z-index: 20;
+}
+
+.imgA img, .imgB img {
+  animation: shimmer_2s_infinite 4s linear infinite;
+  background: linear-gradient(to right, transparent,rgba(255, 255, 255, 0.6) 50%,transparent);
+  background-size: 200% auto;
 }
 
 .imgA, .imgB {
